@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="title" layoutX="206.0" layoutY="61.0" text="CarePoint" />
+      <ImageView fitHeight="78.0" fitWidth="67.0" layoutX="129.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="subtitle" layoutX="206.0" layoutY="102.0" text="Health Management System" />
+      <TableView layoutX="128.0" layoutY="191.0" prefHeight="407.0" prefWidth="838.0">
+        <columns>
+          <TableColumn prefWidth="287.99993896484375" text="Nom" />
+          <TableColumn minWidth="6.4000244140625" prefWidth="253.60000610351562" text="Prénom" />
+            <TableColumn prefWidth="296.0" text="Doctor" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label fx:id="listBills" layoutX="128.0" layoutY="147.0" text="List of Bills" />
+   </children>
+</AnchorPane>

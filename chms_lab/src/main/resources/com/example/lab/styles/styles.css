@@ -1,0 +1,178 @@
+/* General app settings */
+.root {
+    -fx-background-color: #FFFFFF; /* Primary background color */
+    -fx-font-family: 'Poppins', sans-serif; /* Default font family */
+}
+
+/* Login page specific styles */
+VBox {
+    -fx-background-color: #F2F2F2; /* Secondary background color */
+    -fx-padding: 40 20 20 20; /* Padding around the content */
+    -fx-spacing: 20; /* Space between elements */
+    -fx-alignment: top_center; /* Align all VBox content to the top */
+}
+
+/* Text styling */
+Text {
+    -fx-fill: #424088; /* Dark blue text color for contrast */
+    -fx-font-family: 'Montserrat', sans-serif; /* Title font */
+    -fx-font-size: 33; /* Title size */
+}
+
+/* Input fields */
+TextField, PasswordField {
+    -fx-font-family: 'Poppins', sans-serif; /* Text font */
+    -fx-font-size: 16; /* Text size */
+    -fx-border-color: #5A9BD5; /* Light blue border */
+    -fx-border-radius: 5; /* Rounded corners */
+    -fx-background-color: #FFFFFF; /* White background */
+    -fx-padding: 10; /* Padding inside the input */
+    -fx-max-width: 350px; /* Limit the width of the input fields */
+    -fx-pref-width: 350px; /* Preferred width for consistency */
+}
+
+/* Button styling */
+Button {
+    -fx-background-color: #5A9BD5; /* Light blue background */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-font-family: 'Poppins', sans-serif; /* Button font */
+    -fx-font-size: 16; /* Button text size */
+    -fx-padding: 10 20; /* Padding for button size */
+    -fx-border-radius: 5; /* Rounded corners */
+}
+
+/* Navbar style */
+.navbar {
+    -fx-background-color: #5A9BD5; /* Light blue background */
+    -fx-padding: 10px;
+    -fx-alignment: CENTER_RIGHT; /* Align the navbar contents to the right */
+}
+
+/* Username label styling */
+.username-label {
+    -fx-fill: #FFFFFF; /* White color for username */
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-size: 16px;
+}
+
+/* Button Primary Styling */
+.button-primary {
+    -fx-background-color: #5A9BD5; /* Light blue background */
+    -fx-text-fill: white; /* White text */
+    -fx-font-family: 'Poppins', sans-serif; /* Button font */
+    -fx-font-size: 16px;
+    -fx-padding: 10px 20px; /* Padding for button size */
+    -fx-border-radius: 5px; /* Rounded corners */
+}
+
+/* Button Hover Effect */
+.button-primary:hover {
+    -fx-background-color: #4CAF50; /* Brighter green on hover */
+}
+
+/* Title styling */
+.title {
+    -fx-fill: #424088; /* Dark blue title color */
+    -fx-font-size: 28px;
+    -fx-font-family: 'Montserrat', sans-serif; /* Title font */
+}
+
+/* Login Form Style */
+.login-form {
+    -fx-background-color: #F2F2F2; /* Light grey background */
+    -fx-padding: 40 20 20 20; /* Padding for spacing */
+    -fx-spacing: 20; /* Space between elements */
+    -fx-alignment: center; /* Center align content */
+    -fx-max-width: 500px; /* Set max width for form */
+    -fx-pref-width: 400px; /* Preferred width for consistency */
+}
+
+
+.navbar-title {
+    -fx-fill: #FFFFFF; /* White text color */
+    -fx-font-family: 'Poppins', sans-serif; /* Font family */
+    -fx-font-size: 18px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+}
+
+
+/* Table Styling */
+.table {
+    -fx-background-color: #FFFFFF; /* White background */
+    -fx-border-color: #E0E0E0; /* Light gray border */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-padding: 10px; /* Padding inside the table */
+    -fx-alignment: center; /* Center align table contents */
+}
+
+/* Table Column Headers Styling */
+.table .column-header {
+    -fx-background-color: #5A9BD5; /* Light blue background */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-font-family: 'Poppins', sans-serif; /* Font family */
+    -fx-font-size: 14px; /* Column header font size */
+}
+
+/* Table Row Styling */
+.table .table-row-cell {
+    -fx-border-color: #E0E0E0; /* Border for table rows */
+}
+
+/* Table Cell Styling */
+.table .table-cell {
+    -fx-font-family: 'Poppins', sans-serif; /* Table cell font */
+    -fx-font-size: 14px; /* Table cell font size */
+    -fx-text-fill: #424088; /* Dark blue text for rows */
+}
+/* Navbar style - Same as LabTechnicianPage */
+.navbar {
+    -fx-background-color: #5A9BD5; /* Light blue background */
+    -fx-padding: 10px;
+    -fx-alignment: CENTER_RIGHT; /* Align the navbar contents to the right */
+}
+
+/* Add Test Button Styling */
+.button-primary {
+    -fx-background-color: #5A9BD5; /* Light blue background */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-font-family: 'Poppins', sans-serif; /* Button font */
+    -fx-font-size: 16px; /* Button text size */
+    -fx-padding: 10px 20px; /* Padding for button size */
+    -fx-border-radius: 5px; /* Rounded corners */
+}
+
+.button-primary:hover {
+    -fx-background-color: #4CAF50; /* Green on hover */
+}
+
+/* Centering the Table */
+.table-container {
+    -fx-alignment: center; /* Center the table */
+    -fx-padding: 20px; /* Padding around the table */
+}
+
+/* Style for Delete Button */
+.button-delete {
+    -fx-background-color: #F44336; /* Red color */
+    -fx-text-fill: white; /* White text */
+    -fx-padding: 5px 10px; /* Smaller padding */
+    -fx-font-size: 12px; /* Smaller font size */
+}
+
+/* Style for Modify Button */
+.button-modify {
+    -fx-background-color: #FFEB3B; /* Yellow color */
+    -fx-text-fill: black; /* Black text */
+    -fx-padding: 5px 10px; /* Smaller padding */
+    -fx-font-size: 12px; /* Smaller font size */
+}
+
+/* Style for Add Button (Blue) */
+.button-add {
+    -fx-background-color: #2196F3; /* Blue color */
+    -fx-text-fill: white; /* White text */
+    -fx-padding: 5px 10px; /* Smaller padding */
+    -fx-font-size: 12px; /* Smaller font size */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-background-radius: 5px; /* Rounded corners */
+}

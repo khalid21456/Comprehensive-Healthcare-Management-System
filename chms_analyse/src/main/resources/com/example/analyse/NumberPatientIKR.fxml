@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.analyse.Controller.NumberPatientIKRController"
+            prefHeight="400.0" prefWidth="600.0"
+            stylesheets="@style1.css">
+
+    <!-- Graphique linéaire -->
+    <LineChart fx:id="lineChart" layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="800.0">
+        <!-- Axe X (catégories) -->
+        <xAxis>
+            <CategoryAxis fx:id="xAxis" label="YEARS" />
+        </xAxis>
+
+        <!-- Axe Y (valeurs numériques) -->
+        <yAxis>
+            <NumberAxis fx:id="yAxis" label="PATIENTS" lowerBound="0" upperBound="300" tickUnit="50" />
+        </yAxis>
+    </LineChart>
+</AnchorPane>

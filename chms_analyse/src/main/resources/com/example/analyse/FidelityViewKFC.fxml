@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="20" style="-fx-background-color: #FFFFFF; -fx-padding: 20px;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.analyse.Controller.FidelityControllerKFC">
+
+    <Label style="-fx-font-family: 'Montserrat'; -fx-font-weight: semi-bold; -fx-font-size: 33.18; -fx-text-fill: #424088;" text="Fidélité des Patients" />
+
+    <Label fx:id="percentageLabel" style="-fx-font-family: 'Poppins'; -fx-font-size: 19.2; -fx-text-fill: #101023;" text="Pourcentage des patients fidèles : 0%" />
+
+    <ProgressBar fx:id="progressBar" prefHeight="18.0" prefWidth="400.0" progress="0.0" style="-fx-background-color: #F2F2F2; -fx-accent: #5A9BD5;" />
+</VBox>

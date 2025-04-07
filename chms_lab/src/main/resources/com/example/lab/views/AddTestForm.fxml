@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.lab.controllers.AddTestFormController" spacing="20" alignment="CENTER">
+
+    <Label text="Add New Test"/>
+    <TextField fx:id="testNameField" promptText="Test Name"/>
+    <TextField fx:id="testUnitField" promptText="Unit"/>
+    <TextField fx:id="testPriceField" promptText="Price"/>
+    <TextField fx:id="testMinValueField" promptText="Min Value"/>
+    <TextField fx:id="testMaxValueField" promptText="Max Value"/>
+    <TextArea fx:id="testDescriptionField" promptText="Description"/>
+
+    <Button text="Add Test" onAction="#handleAddTest"/>
+    <Button text="Cancel" onAction="#handleCancel"/>
+</VBox>

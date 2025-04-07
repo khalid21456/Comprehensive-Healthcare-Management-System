@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" styleClass="main" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.switchcontroller">
+    <left>
+        <VBox prefHeight="557.0" prefWidth="79.0" BorderPane.alignment="CENTER">
+            <children>
+   <StackPane fx:id="rootPane" prefHeight="765.0" prefWidth="79.0" style="-fx-background-color: #FFFF; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0, 5, 0);">
+    <children>
+        <Pane prefHeight="683.0" prefWidth="79.0">
+            <children>
+                <Button fx:id="profileButton" layoutX="5.0" layoutY="92.0" onAction="#handleProfileButtonAction" style="-fx-background-color: transparent;">
+                           <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/Icon2menu.png" />
+                            </image>
+                        </ImageView>
+                           </graphic>
+                </Button>
+                <Button fx:id="folderButton" layoutX="6.0" layoutY="163.0" onAction="#handleFolderButtonAction" style="-fx-background-color: transparent;">
+                           <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/IconFolderMenu.png" />
+                            </image>
+                        </ImageView>
+                           </graphic>
+                </Button>
+                <Button fx:id="calendarButton" layoutX="7.0" layoutY="237.0" onAction="#handleCalendarButtonAction" style="-fx-background-color: transparent;">
+                           <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/IconCalendarMenu.png" />
+                            </image>
+                        </ImageView>
+                           </graphic>
+                </Button>
+                <Button fx:id="menuButton" layoutX="4.0" layoutY="26.0" onAction="#handleMenuButtonAction" style="-fx-background-color: transparent;">
+                           <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/Home.png" />
+                            </image>
+                        </ImageView>
+                           </graphic>
+                </Button>
+                <Button fx:id="logoutButton" layoutX="2.0" layoutY="311.0" onAction="#handleLogoutButtonAction" prefHeight="57.0" prefWidth="41.0" style="-fx-background-color: transparent;">
+                    <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/Logout%206.jpg" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</StackPane>
+</children>
+        </VBox>
+    </left>
+    <bottom>
+        <HBox prefHeight="142.0" prefWidth="1050.0" style="-fx-pref-height: 61px;" BorderPane.alignment="CENTER">
+            <children>
+                <Pane prefHeight="62.0" prefWidth="88.0" style="-fx-background-color: #FFFF;" />
+                <Pane prefHeight="62.0" prefWidth="1030.0" style="-fx-background-color: #81C784B2;">
+                    <children>
+                        <Text layoutX="29.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-weight: 400; -fx-font-size: 14px;" text="Call Our Support  : +212 05290-04477" />
+                        <Text layoutX="381.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-weight: 400; -fx-font-size: 14px;" text="Adresse  : Ave Mohamed Taieb Naciri, Casablanca 82403 " />
+                        <Text layoutX="831.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-weight: 400; -fx-font-size: 14px;" styleClass="bottom-text" text="Open 24 Hours / 7 Days" />
+                    </children>
+                </Pane>
+            </children>
+        </HBox>
+    </bottom>
+   <center>
+      <AnchorPane prefHeight="638.0" prefWidth="1010.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="title" layoutX="39.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section-title" text="Hello , welcome back ! " />
+            <ImageView fitHeight="48.0" fitWidth="200.0" layoutX="39.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/logo.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="112.0" layoutY="136.0" prefHeight="218.0" prefWidth="356.0" style="-fx-background-color: #F2F2F2; -fx-background-radius: 9; -fx-pref-width: 361; -fx-pref-height: 220;">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="71.0" layoutX="150.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/EmergencyCall.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="titlecard" layoutX="97.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-card" text="Emergency Care" />
+                  <Text fx:id="bodycard" layoutX="25.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="body-card-text" text="24/7 emergency services for critical health conditions.Immediate response and treatment by our expert team." textAlignment="CENTER" wrappingWidth="310.78089904785156" />
+                  <Text fx:id="linkcard" layoutX="140.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="link-card" text="Learn More" underline="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="510.0" layoutY="136.0" prefHeight="218.0" prefWidth="356.0" style="-fx-background-color: #F2F2F2; -fx-background-radius: 9; -fx-pref-width: 361; -fx-pref-height: 220;">
+               <children>
+                  <ImageView fitHeight="67.0" fitWidth="76.0" layoutX="147.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Radio.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="19.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-card" text="Diagnostic &amp; Imaging Services" />
+                  <Text layoutX="25.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="body-card-text" text="Comprehensive lab tests, X-rays, MRIs, and CT scans.Quick and accurate results for better treatment decisions." textAlignment="CENTER" wrappingWidth="310.78089904785156" />
+                  <Text layoutX="150.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="link-card" text="Learn More" underline="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="510.0" layoutY="375.0" prefHeight="218.0" prefWidth="356.0" style="-fx-background-color: #F2F2F2; -fx-background-radius: 9; -fx-pref-width: 361; -fx-pref-height: 220;">
+               <children>
+                  <ImageView fitHeight="59.0" fitWidth="67.0" layoutX="151.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Defibrillator.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="45.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-card" text="Maternity &amp; Neonatal Care" />
+                  <Text layoutX="25.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="body-card-text" text="Comprehensive care for expecting mothers and newborns.Neonatal Intensive Care Unit (NICU) for critical infant care." textAlignment="CENTER" wrappingWidth="310.78089904785156" />
+                  <Text layoutX="150.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="link-card" text="Learn More" underline="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="112.0" layoutY="375.0" prefHeight="218.0" prefWidth="356.0" style="-fx-background-color: #F2F2F2; -fx-background-radius: 9; -fx-pref-width: 361; -fx-pref-height: 220;">
+               <children>
+                  <ImageView fitHeight="67.0" fitWidth="72.0" layoutX="147.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Hospital.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="94.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-card" text="Surgical Services" />
+                  <Text layoutX="25.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="body-card-text" text="Advanced operating rooms for general and specialized surgeries.Minimally invasive procedures for faster recovery." textAlignment="CENTER" wrappingWidth="310.78089904785156" />
+                  <Text layoutX="140.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="link-card" text="Learn More" underline="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

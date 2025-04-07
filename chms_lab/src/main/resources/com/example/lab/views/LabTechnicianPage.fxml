@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.lab.controllers.LabTechnicianPageController"
+      spacing="20" alignment="CENTER" styleClass="dashboard">
+
+    <!-- Navbar -->
+    <HBox spacing="20" styleClass="navbar">
+        <Text text="Lab Technician Dashboard" styleClass="navbar-title"/>
+        <HBox HBox.hgrow="ALWAYS"/> <!-- This makes sure the HBox stretches -->
+        <Button fx:id="testManagementButton" styleClass="button-primary" text="Manage Tests" onAction="#handleTestManagement"/>
+    </HBox>
+
+    <!-- Table for Pending Ordonnance Tests -->
+    <VBox styleClass="table-container" VBox.vgrow="ALWAYS"> <!-- Ensures vertical growth -->
+        <Text text="Pending Ordonnance Tests" styleClass="table-title"/>
+        <TableView fx:id="pendingTable" styleClass="table" HBox.hgrow="ALWAYS"> <!-- Horizontal growth -->
+            <columns>
+                <TableColumn fx:id="pendingIDColumn" text="ID" />
+                <TableColumn fx:id="pendingDoctorColumn" text="Doctor" />
+                <TableColumn fx:id="pendingPatientColumn" text="Patient" />
+                <TableColumn fx:id="pendingDateColumn" text="Test Date" />
+                <TableColumn fx:id="pendingStatusColumn" text="Status" />
+                <TableColumn fx:id="pendingActionColumn" text="Actions" />
+            </columns>
+        </TableView>
+    </VBox>
+
+    <!-- Table for Completed Ordonnance Tests -->
+    <VBox styleClass="table-container" VBox.vgrow="ALWAYS"> <!-- Ensures vertical growth -->
+        <Text text="Completed Ordonnance Tests" styleClass="table-title"/>
+        <TableView fx:id="completedTable" styleClass="table" HBox.hgrow="ALWAYS"> <!-- Horizontal growth -->
+            <columns>
+                <TableColumn fx:id="completedIDColumn" text="ID" />
+                <TableColumn fx:id="completedDoctorColumn" text="Doctor" />
+                <TableColumn fx:id="completedPatientColumn" text="Patient" />
+                <TableColumn fx:id="completedDateColumn" text="Test Date" />
+                <TableColumn fx:id="completedStatusColumn" text="Status" />
+                <TableColumn fx:id="completedActionColumn" text="Actions" />
+            </columns>
+        </TableView>
+    </VBox>
+</VBox>

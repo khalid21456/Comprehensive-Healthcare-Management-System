@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.lab.controllers.DoctorPageController"
+      spacing="20" alignment="CENTER" styleClass="dashboard">
+
+    <!-- Navbar -->
+    <HBox spacing="20" styleClass="navbar">
+        <!-- Title on the far left -->
+        <Text text="Doctor Dashboard" styleClass="navbar-title"/>
+        <!-- Spacer to push username and button to the far right -->
+        <HBox HBox.hgrow="ALWAYS"/>
+        <!-- Username and Logout button -->
+        <Text fx:id="usernameText" styleClass="username-label" text="Username"/>
+        <Button text="Logout" styleClass="button-primary" onAction="#handleLogout"/>
+    </HBox>
+</VBox>

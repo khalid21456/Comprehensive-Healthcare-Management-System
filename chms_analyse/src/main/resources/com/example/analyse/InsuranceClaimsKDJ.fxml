@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.analyse.Controller.InsuranceClaimsKDJController" spacing="10">
+    <LineChart fx:id="lineChart">
+        <xAxis>
+            <CategoryAxis fx:id="yearAxis" label="Evolution Over the Years" />
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="claimsAxis" label="Number of Claims" />
+        </yAxis>
+    </LineChart>
+</VBox>

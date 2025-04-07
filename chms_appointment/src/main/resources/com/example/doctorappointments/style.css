@@ -1,0 +1,26 @@
+
+.label{
+    -fx-text-fill: #F2F2F2;
+}
+.interieur{
+    -fx-background-color:#FFFFFF ;
+}
+.date{
+    -fx-text-fill: #2A4D69;
+}
+.separator {
+    -fx-background-color: transparent; /* Ensure the background doesn't interfere */
+}
+
+.separator .line {
+    -fx-background-color: #2A4D69; /* Set the color of the separator line */ /* Adjust the thickness of the line if needed */
+}
+.bouton{
+    -fx-border-radius: 4px;
+    -fx-text-fill: #2A4D69;
+    -fx-font-weight: bold;
+}
+.titer{
+    -fx-text-fill: #2A4D69;
+    -fx-font-weight: bold;
+}

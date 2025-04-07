@@ -1,0 +1,279 @@
+/* Default styling */
+.root {
+    -fx-font-family: "Poppins", sans-serif;
+    -fx-font-size: 16px;
+    -fx-background-color: #FFFFFF; /* White background */
+    -fx-text-fill: #424088; /* Dark Blue text color for better contrast */
+}
+
+/* Title styling */
+.label {
+    -fx-font-family: "Montserrat", sans-serif;
+    -fx-font-weight: SemiBold;
+    -fx-font-size: 34px;
+    -fx-text-fill: #424088; /* Dark Blue */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 3, 0, 0, 2); /* Subtle shadow for text */
+    -fx-padding: 10px 0; /* Adding vertical padding for balance */
+}
+
+/* Subtitles */
+.subtitle {
+    -fx-font-family: "Poppins", sans-serif;
+    -fx-font-weight: Regular;
+    -fx-font-size: 20px;
+    -fx-text-fill: #424088; /* Dark Blue */
+    -fx-padding: 5px 0;
+}
+
+/* Main Text */
+.text {
+    -fx-font-family: "Poppins", sans-serif;
+    -fx-font-weight: Regular;
+    -fx-font-size: 16px;
+    -fx-text-fill: #424088; /* Dark Blue */
+    -fx-line-spacing: 1.5; /* Increased line spacing for better readability */
+    -fx-padding: 5px 0;
+}
+
+/* Table styles */
+.table {
+    -fx-font-family: "Encode Sans", sans-serif;
+    -fx-font-size: 14px;
+    -fx-border-color: #F2F2F2; /* Light Gray borders */
+    -fx-border-width: 1px;
+    -fx-background-color: #FFFFFF; /* White background for table */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 4, 0, 0, 2); /* Subtle shadow around table */
+}
+
+.table-header {
+    -fx-background-color: #5A9BD5; /* Light Blue header */
+    -fx-text-fill: white;
+    -fx-padding: 8px 10px;
+}
+
+.table-cell {
+    -fx-background-color: #FFFFFF; /* White cells */
+    -fx-text-fill: #424088; /* Dark Blue text */
+    -fx-padding: 8px;
+}
+
+/* Button styles */
+.button {
+    -fx-background-color: #5A9BD5; /* Light Blue */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 8px; /* Slightly rounded corners */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 2, 0, 0, 2); /* Subtle shadow */
+    -fx-transition: background-color 0.3s ease-in-out; /* Smooth background transition */
+}
+
+.button:hover {
+    -fx-background-color: #4682b4; /* Slightly darker blue */
+}
+
+.button:pressed {
+    -fx-background-color: #2C6D9A; /* Even darker blue when pressed */
+}
+
+.button-success {
+    -fx-background-color: #81C784; /* Pastel Green for success */
+    -fx-border-color: #66BB6A; /* Green border for success */
+}
+
+.button-warning {
+    -fx-background-color: #FFA726; /* Orange for warnings */
+    -fx-border-color: #FF9800; /* Orange border for warnings */
+}
+
+.button-error {
+    -fx-background-color: #E57373; /* Red for errors */
+    -fx-border-color: #EF5350; /* Red border for errors */
+}
+
+.button-close {
+    -fx-background-color: #F2F2F2; /* Light Gray for close buttons */
+    -fx-text-fill: #424088; /* Dark Blue for text */
+    -fx-padding: 8px 12px;
+    -fx-border-radius: 5px;
+}
+
+/* Sidebar styling */
+/* Sidebar styling */
+/* Sidebar styling */
+.sidebar {
+    -fx-background-color: #F3F3F3; /* Light Gray */
+    -fx-padding: 20px;
+    -fx-border-radius: 8px; /* Rounded corners for sidebar */
+    -fx-background-radius: 8px; /* Ensures the background corners are also rounded */
+    -fx-effect: null; /* Remove any shadow effect to keep the sidebar clean */
+    -fx-border: none; /* No borders, to make it blend with the background */
+}
+
+/* Sidebar button */
+/* Sidebar button */
+.sidebar-button {
+    -fx-background-color:  #F2F2F2; /* Light Gray */
+    -fx-text-fill:  #424088; /* Dark Blue */
+    -fx-font-size: 16px;
+    -fx-padding: 15px 30px; /* Rectangular shape, wider padding */
+    -fx-border-radius: 0px; /* Remove rounded corners */
+    -fx-border: none; /* Remove borders for a cleaner look */
+    -fx-effect: null; /* Remove shadow */
+
+}
+
+
+/* Sidebar button hover effect */
+.sidebar-button:hover {
+    -fx-background-color: #D0D0D0; /* Slightly darker gray for hover effect */
+    -fx-text-fill: #424088; /* Ensure text color remains consistent */
+}
+
+/* Sidebar button active/pressed effect */
+.sidebar-button:pressed {
+    -fx-background-color: #B0B0B0; /* Even darker gray when pressed */
+}
+
+.alert-error {
+    -fx-background-color: #E57373; /* Red for error alerts */
+    -fx-text-fill: #101023; /* Black text */
+    -fx-border-color: #EF5350; /* Red border for error alerts */
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+}
+
+/* Layout adjustments */
+.vbox {
+    -fx-padding: 20px;
+    -fx-spacing: 15px; /* Increased spacing for better visual balance */
+}
+
+.hbox {
+    -fx-spacing: 15px; /* Increased spacing for better visual balance */
+    -fx-padding: 10px;
+}
+
+/* AnchorPane for positioning elements */
+.anchorpane {
+    -fx-padding: 0;
+}
+
+/* Textfield styling */
+.textfield {
+    -fx-background-color: #F2F2F2; /* Light Gray */
+    -fx-border-color: #5A9BD5; /* Light Blue border */
+    -fx-font-size: 16px;
+    -fx-text-fill: #424088; /* Dark Blue text */
+    -fx-border-radius: 8px; /* Rounded corners */
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 2, 0, 0, 2); /* Subtle shadow */
+}
+
+/* Other UI components */
+.stackpane {
+    -fx-background-color: #FFFFFF; /* White background */
+}
+
+/* Tooltip styles */
+.tooltip {
+    -fx-background-color: #F2F2F2; /* Light gray background */
+    -fx-text-fill: #424088; /* Dark blue text */
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+    -fx-border-radius: 5px;
+}
+
+
+/* Title styling */
+.title {
+    -fx-font-family: "Montserrat", sans-serif;
+    -fx-font-weight: SemiBold;
+    -fx-font-size: 22px;
+    -fx-text-fill: #424088; /* Dark Blue */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 3, 0, 0, 2); /* Subtle shadow for text */
+}
+
+/* Subtitle styling */
+.subtitle {
+    -fx-font-family: "Poppins", sans-serif;
+    -fx-font-weight: Regular;
+    -fx-font-size: 16px;
+    -fx-text-fill: #888888; /* Gray */
+    -fx-padding: 5px 0;
+}
+
+/* Textfield styling */
+.textfield {
+    -fx-background-color: #F2F2F2; /* Light Gray */
+    -fx-border-color: #5A9BD5; /* Light Blue border */
+    -fx-font-size: 16px;
+    -fx-text-fill: #424088; /* Dark Blue text */
+    -fx-border-radius: 8px; /* Rounded corners */
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 2, 0, 0, 2); /* Subtle shadow */
+}
+
+/* Button styles */
+.button {
+    -fx-background-color: #5A9BD5; /* Light Blue */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 8px; /* Slightly rounded corners */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 2, 0, 0, 2); /* Subtle shadow */
+}
+
+.button:hover {
+    -fx-background-color: #4682b4; /* Slightly darker blue */
+}
+
+.button:pressed {
+    -fx-background-color: #2C6D9A; /* Even darker blue when pressed */
+}
+
+
+
+
+/* General AnchorPane styling */
+.anchorpane {
+    -fx-padding: 20px;
+    -fx-background-color: #FFFFFF;
+}
+
+/* Labels styling */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #101023;
+}
+
+/* TextField and PasswordField styling */
+.textfield, .passwordfield {
+    -fx-background-color: #F2F2F2;
+    -fx-border-color: #5A9BD5;
+    -fx-border-radius: 5px;
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+}
+
+/* Button styling */
+.button {
+    -fx-background-color: #5A9BD5;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-border-radius: 8px;
+}
+
+.button:hover {
+    -fx-background-color: #4682b4;
+}
+
+.button:pressed {
+    -fx-background-color: #2C6D9A;
+}
+
+/* Image styling */
+.imageview {
+    -fx-opacity: 0.8;
+}

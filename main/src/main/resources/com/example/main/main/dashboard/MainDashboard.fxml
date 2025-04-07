@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!--<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.main.dashboard.MainDashboardController">
+    <VBox alignment="CENTER" spacing="20.0">
+        <Button text="Appointments" onAction="#handleMainApplicationButton" />
+        <Button text="Pharmacy" onAction="#handleMainPharmacyButton" />
+    </VBox>
+</AnchorPane>-->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.main.dashboard.MainDashboardController">
+    <children>
+
+        <!-- Dashboard Panel -->
+        <AnchorPane prefHeight="280.0" prefWidth="1100.0" style="-fx-background-color: #e1f1ff; -fx-border-radius: 15px;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <ImageView fx:id="bannerImage" fitHeight="276.0" fitWidth="324.0" layoutX="750.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+                <Label layoutX="111.0" layoutY="175.0" prefHeight="57.0" prefWidth="310.0" text="Welcome to your dashboard" textFill="#3c3969">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                    </font>
+                </Label>
+              <ImageView fx:id="logoImage" fitHeight="45.0" fitWidth="57.0" layoutX="54.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+              <Label layoutX="116.0" layoutY="25.0" text="CarePoint" textFill="#5a9bd5">
+                  <font>
+                      <Font name="Arial Rounded MT Bold" size="26.0" />
+                  </font>
+              </Label>
+              <Label alignment="CENTER" layoutX="13.0" layoutY="60.0" prefHeight="21.0" prefWidth="270.0" text="Health Management System" textAlignment="CENTER" textFill="#0000006f">
+                  <font>
+                      <Font name="Arial Rounded MT Bold" size="13.0" />
+                  </font>
+              </Label>
+            </children>
+            <effect>
+                <DropShadow height="23.94" offsetX="0.5" offsetY="1.5" radius="8.537500000000001" width="12.21">
+                    <color>
+                        <Color red="0.09247075766324997" green="0.19753898680210114" blue="0.28947368264198303" />
+                    </color>
+                </DropShadow>
+            </effect>
+            <opaqueInsets>
+                <Insets top="9.0" />
+            </opaqueInsets>
+        </AnchorPane>
+      <Button fx:id="AppointmentList" layoutX="43.0" layoutY="328.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleMainApplicationButton" prefHeight="88.0" prefWidth="280.0" style="-fx-background-color: #5a9bd5;-fx-cursor: hand;">
+         <effect>
+            <DropShadow height="28.33" radius="14.03" width="29.79">
+               <color>
+                  <Color red="0.3529411852359772" green="0.6078431606292725" blue="0.8352941274642944" />
+               </color>
+            </DropShadow>
+         </effect>
+         <graphic>
+            <AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="190.0">
+               <children>
+                  <Label layoutX="23.0" layoutY="147.0" text="View List of Appointments" textFill="WHITE" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="147.0">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Text fill="WHITE" layoutX="65.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor Department">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="47.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Navigate to Doctor Department" wrappingWidth="168.0234375" />
+                       <ImageView fx:id="icon1" fitHeight="65.0" fitWidth="68.0" layoutX="-34.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </graphic>
+      </Button>
+      <Button fx:id="AppointmentList2" layoutX="386.0" layoutY="329.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleMainPharmacyButton" prefHeight="88.0" prefWidth="280.0" style="-fx-background-color: #5a9bd5;-fx-cursor: hand;">
+         <effect>
+            <DropShadow height="28.33" radius="14.03" width="29.79">
+               <color>
+                  <Color red="0.3529411852359772" green="0.6078431606292725" blue="0.8352941274642944" />
+               </color>
+            </DropShadow>
+         </effect>
+         <graphic>
+            <AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="190.0">
+               <children>
+                  <Label layoutX="23.0" layoutY="147.0" text="View List of Appointments" textFill="WHITE" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="147.0">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Text fill="WHITE" layoutX="54.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pharmacy Department">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="42.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Navigate to Pharmcy Department" textAlignment="CENTER" wrappingWidth="168.0234375" />
+                  <ImageView fx:id="icon2" fitHeight="65.0" fitWidth="68.0" layoutX="-34.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </graphic>
+      </Button>
+      <Button fx:id="AppointmentList1" layoutX="759.0" layoutY="329.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleMainLaboratoryButton" prefHeight="88.0" prefWidth="280.0" style="-fx-background-color: #5a9bd5;-fx-cursor: hand;">
+         <effect>
+            <DropShadow height="28.33" radius="14.03" width="29.79">
+               <color>
+                  <Color red="0.3529411852359772" green="0.6078431606292725" blue="0.8352941274642944" />
+               </color>
+            </DropShadow>
+         </effect>
+         <graphic>
+            <AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="190.0">
+               <children>
+                  <Label layoutX="23.0" layoutY="147.0" text="View List of Appointments" textFill="WHITE" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="147.0">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Text fill="WHITE" layoutX="58.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Laboratory Department">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="54.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Navigate to Laboratory Department" textAlignment="CENTER" wrappingWidth="168.0234375" />
+               </children>
+            </AnchorPane>
+         </graphic>
+      </Button>
+      <Button fx:id="AppointmentList3" layoutX="43.0" layoutY="472.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleMainPatientButton" prefHeight="88.0" prefWidth="280.0" style="-fx-background-color: #5a9bd5;-fx-cursor: hand;">
+         <effect>
+            <DropShadow height="28.33" radius="14.03" width="29.79">
+               <color>
+                  <Color red="0.3529411852359772" green="0.6078431606292725" blue="0.8352941274642944" />
+               </color>
+            </DropShadow>
+         </effect>
+         <graphic>
+            <AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="190.0">
+               <children>
+                  <Text fill="WHITE" layoutX="61.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Department">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="43.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Navigate to Patient Department" textAlignment="CENTER" wrappingWidth="168.0234375" />
+                  <ImageView fx:id="icon3" fitHeight="65.0" fitWidth="68.0" layoutX="-34.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </graphic>
+      </Button>
+      <Button fx:id="AppointmentList4" layoutX="386.0" layoutY="472.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleMainBillButton" prefHeight="88.0" prefWidth="280.0" style="-fx-background-color: #5a9bd5;-fx-cursor: hand;">
+         <effect>
+            <DropShadow height="28.33" radius="14.03" width="29.79">
+               <color>
+                  <Color red="0.3529411852359772" green="0.6078431606292725" blue="0.8352941274642944" />
+               </color>
+            </DropShadow>
+         </effect>
+         <graphic>
+            <AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="190.0">
+               <children>
+                  <Text fill="WHITE" layoutX="70.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bill Department">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="55.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Navigate to Bill Department" wrappingWidth="168.0234375" />
+                  <ImageView fx:id="icon4" fitHeight="65.0" fitWidth="68.0" layoutX="-30.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </graphic>
+      </Button>
+      <Button fx:id="AppointmentList5" layoutX="759.0" layoutY="473.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleMainAnalysisButton" prefHeight="88.0" prefWidth="280.0" style="-fx-background-color: #5a9bd5;-fx-cursor: hand;">
+         <effect>
+            <DropShadow height="28.33" radius="14.03" width="29.79">
+               <color>
+                  <Color red="0.3529411852359772" green="0.6078431606292725" blue="0.8352941274642944" />
+               </color>
+            </DropShadow>
+         </effect>
+         <graphic>
+            <AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="190.0">
+               <children>
+                  <Text fill="WHITE" layoutX="59.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Analysis Department">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="46.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Navigate to Analysis Department" textAlignment="CENTER" wrappingWidth="168.0234375" />
+                  <ImageView fx:id="icon5" fitHeight="65.0" fitWidth="68.0" layoutX="-33.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </graphic>
+      </Button>
+      <ImageView fx:id="icon6" fitHeight="65.0" fitWidth="68.0" layoutX="769.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true" />
+
+    </children>
+</AnchorPane>

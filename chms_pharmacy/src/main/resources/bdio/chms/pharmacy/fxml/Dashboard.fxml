@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="672.0" prefWidth="924.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bdio.chms.pharmacy.controllers.DashboardController">
+   <!-- Sidebar -->
+   <left>
+      <VBox fx:id="sidebar" maxWidth="100.0" prefHeight="858.0" prefWidth="100.0" spacing="15" style="-fx-background-color: #F2F2F2; -fx-padding: 20;">
+         <Button fx:id="dashboardButton" onAction="#goToDashboard" prefHeight="115.0" prefWidth="160.0" style="-fx-background-color: #F2F2F2;">
+            <graphic>
+               <ImageView fitHeight="50.0" fitWidth="50.0">
+                  <image>
+                     <Image url="@../images/home.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+
+         <Button fx:id="viewMedicationButton" onAction="#showViewMedication" prefHeight="115.0" prefWidth="160.0" style="-fx-background-color: #F2F2F2;">
+            <graphic>
+               <ImageView fitHeight="50.0" fitWidth="50.0">
+                  <image>
+                     <Image url="@../images/med.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+
+
+
+         <Button fx:id="calendarButton" onAction="#goToOrdonnance" prefHeight="115.0" prefWidth="160.0" style="-fx-background-color: #F2F2F2;" styleClass="sidebar-button">
+            <graphic>
+               <ImageView fitHeight="50.0" fitWidth="50.0">
+                  <image>
+                     <Image url="@../images/command.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+
+
+         <Button fx:id="settingsButton" onAction="#goToFournisseur" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #F2F2F2;">
+            <graphic>
+               <ImageView fitHeight="50.0" fitWidth="50.0">
+                  <image>
+                     <Image url="@../images/stats.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button fx:id="profileButton" onAction="#goToProfile" prefHeight="102.0" prefWidth="88.0" style="-fx-background-color: #F2F2F2; -fx-background-radius: 10;">
+            <graphic>
+               <ImageView fitHeight="48.0" fitWidth="47.0">
+                  <image>
+                     <Image url="@../images/profile.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="672.0" prefWidth="0.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <!-- Header -->
+            <HBox alignment="CENTER_LEFT" layoutX="12.0" layoutY="14.0" prefHeight="82.0" prefWidth="800.0" spacing="15" style="-fx-background-color: #FFFFFF; -fx-padding: 10;">
+               <ImageView fitHeight="43.0" fitWidth="58.0">
+                  <image>
+                     <Image url="@../images/heartbeats_logo.png" />
+                  </image>
+               </ImageView>
+               <VBox alignment="CENTER_LEFT" spacing="5">
+                  <Label graphicTextGap="1.0" prefHeight="15.0" prefWidth="162.0" style="-fx-font-family: 'Montserrat'; -fx-font-weight: bold; -fx-font-size: 16; -fx-text-fill: #5A9BD5;" text="CarePoint" />
+                  <Label graphicTextGap="1.0" prefHeight="8.0" prefWidth="188.0" style="-fx-font-family: 'Poppins'; -fx-font-size: 15; -fx-text-fill: #888888;" text="Health Management System" />
+               </VBox>
+            </HBox>
+
+
+            <!-- Welcome Banner -->
+            <AnchorPane layoutX="24.0" layoutY="114.0" prefHeight="127.0" prefWidth="712.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);                    -fx-background-radius: 15; -fx-border-radius: 15;">
+               <Label fx:id="welcomeLabel" layoutX="32.0" layoutY="20.0" style="-fx-font-family: 'Poppins'; -fx-font-size: 24; -fx-font-weight: bold; -fx-text-fill: #2A4D69;" />
+
+               <ImageView fitHeight="135.0" fitWidth="212.0" layoutX="474.0" layoutY="-32.0">
+                  <image>
+                     <Image url="@../images/undraw_medicine_b1ol.png" />
+                  </image>
+               </ImageView>
+            </AnchorPane>
+            <!-- Action Buttons -->
+            <Button layoutX="32.0" layoutY="268.0" mnemonicParsing="false" onAction="#showViewMedication" prefHeight="114.0" prefWidth="160.0" style="-fx-background-color: #5A9BD5; -fx-background-radius: 10;" styleClass="dashboard-button">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="35.0">
+                     <image>
+                        <Image url="@../images/capsules.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+
+            <Button layoutX="204.0" layoutY="268.0" mnemonicParsing="false" onAction="#goToOrdonnance" prefHeight="114.0" prefWidth="160.0" style="-fx-background-color: #5A9BD5; -fx-background-radius: 10;" styleClass="dashboard-button">
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="37.0">
+                     <image>
+                        <Image url="@../images/prescription-bottle.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+
+            <Button layoutX="386.0" layoutY="268.0" mnemonicParsing="false" onAction="#goToFournisseur" prefHeight="114.0" prefWidth="160.0" style="-fx-background-color: #5A9BD5; -fx-background-radius: 10;" styleClass="dashboard-button" />
+
+            <Button layoutX="571.0" layoutY="268.0" mnemonicParsing="false" onAction="#goToProfile" prefHeight="114.0" prefWidth="160.0" style="-fx-background-color: #5A9BD5; -fx-background-radius: 10;" styleClass="dashboard-button" />
+
+            <!-- Button Labels -->
+            <Label layoutX="53.0" layoutY="355.0" style="-fx-font-family: 'Poppins'; -fx-font-size: 14; -fx-text-fill: #F8F9FA;" text="List of Medications" />
+            <Label layoutX="224.0" layoutY="355.0" style="-fx-font-family: 'Poppins'; -fx-font-size: 14; -fx-text-fill: #F8F9FA;" text="List of prescriptions" />
+            <Label layoutX="426.0" layoutY="355.0" style="-fx-font-family: 'Poppins'; -fx-font-size: 14; -fx-text-fill: #F8F9FA;" text="List of orders" />
+            <Label layoutX="631.0" layoutY="355.0" style="-fx-font-family: 'Poppins'; -fx-font-size: 14; -fx-text-fill: #F8F9FA;" text="Profile" />
+            <ImageView fitHeight="29.0" fitWidth="37.0" layoutX="448.0" layoutY="311.0">
+               <image>
+                  <Image url="@../images/order-history.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="47.0" layoutX="628.0" layoutY="304.0">
+               <image>
+                  <Image url="@../images/user2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

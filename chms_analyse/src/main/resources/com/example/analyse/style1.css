@@ -1,0 +1,128 @@
+/* styles.css */
+
+/* Primary Colors */
+
+
+
+
+
+
+
+
+.root {
+    -fx-background-color: #F2F2F2; /* Interface background: White */
+}
+
+.anchor-pane {
+    -fx-background-color: #F2F2F2; /* Secondary background color */
+}
+
+/* Font Settings */
+.title {
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 33px;
+    -fx-font-weight: semi-bold;
+    -fx-fill: #424088; /* Dark blue for contrast */
+}
+
+.subtitle {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 19px;
+    -fx-fill: #5A9BD5; /* Light blue */
+}
+
+.text {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 16px;
+    -fx-fill: #424088; /* Dark blue for standard text */
+}
+
+/* Alert Colors */
+.alert-warning {
+    -fx-background-color: #FFA726; /* Orange for warnings */
+}
+
+.alert-error {
+    -fx-background-color: #E57373; /* Red for errors */
+}
+
+.alert-info {
+    -fx-background-color: #FFF176; /* Pale yellow for attention */
+}
+
+.alert-success {
+    -fx-background-color: #81C784; /* Pastel green for success */
+}
+
+
+.chart-pie-label {
+    -fx-fill: #101023; /* Black text for labels */
+    -fx-font-family: "Poppins";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+
+.chart-legend {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 14px;
+    -fx-text-fill: #424088; /* Dark blue text for legend */
+}
+
+.chart-legend-item-symbol {
+    -fx-background-radius: 5px; /* Rounded legend symbols */
+    -fx-padding: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 3, 0.5, 1, 1);
+}
+
+
+/* styles.css */
+
+.bar-chart .chart-bar {
+    -fx-bar-fill: #4CAF50;  /* Green color for bars */
+}
+
+.bar-chart .chart-bar:hover {
+    -fx-bar-fill: #388E3C;  /* Darker green when hovered */
+}
+
+/* Customize other parts of the chart */
+.bar-chart .axis-label {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 16px;
+    -fx-fill: #424088;  /* Dark blue color for axis labels */
+}
+
+.bar-chart .chart-title {
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 18px;
+    -fx-fill: #424088;  /* Title color */
+}
+
+
+/* this part for the graph 3 */
+/* styles.css */
+
+/* Horizontal Bar Chart Custom Styles */
+.bar-chart .chart-bar {
+    -fx-bar-fill: #4CAF50; /* Green color for the bars */
+}
+
+.bar-chart .chart-bar:hover {
+    -fx-bar-fill: #388E3C; /* Darker green when hovered */
+}
+
+/* Optional: Custom font and style for labels */
+.bar-chart .axis-label {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 16px;
+    -fx-fill: #424088; /* Dark blue for axis labels */
+}
+
+.bar-chart .chart-title {
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 18px;
+    -fx-fill: #424088; /* Title color */
+}
+
+

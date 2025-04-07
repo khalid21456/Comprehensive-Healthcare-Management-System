@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.doctorappointments.controller.AppointmentController">
+    <stylesheets>
+        <URL value="@AppointmentStyle.css" />
+    </stylesheets>
+
+    <children>
+        <TextField fx:id="SearchFieldText" layoutX="84.0" layoutY="21.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="38.0" prefWidth="549.0" promptText="search by doctor name, patient name, service or status" style="-fx-background-color: white; -fx-border-color: #5A9BD5; -fx-border-radius: 7px; -fx-cursor: text;" AnchorPane.leftAnchor="44.0" />
+        <TableView fx:id="AppointmentTableView" layoutX="50.0" layoutY="81.0" prefHeight="537.0" prefWidth="1000.0" AnchorPane.bottomAnchor="74.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="81.0">
+            <columns>
+                <TableColumn fx:id="DoctorNameTableColumn" prefWidth="110.0" text="Doctor" />
+                <TableColumn fx:id="PatientNameTableColumn" prefWidth="115.0" text="Patient" />
+                <TableColumn fx:id="AppointmentDateTableColumn" prefWidth="80.0" text="Date" />
+                <TableColumn fx:id="AppointmentTimeTableColumn" prefWidth="80.0" text="Time" />
+                <TableColumn fx:id="ServiceTableColumn" prefWidth="100.0" text="Service" />
+                <TableColumn fx:id="StatusTableColumn" prefWidth="70.0" text="Status" />
+                <TableColumn fx:id="PayeTableColumn" prefWidth="50.0" text="Payed" />
+                <TableColumn fx:id="ActionsTableColumn" editable="false" prefWidth="450.0" text="Actions" />
+
+            </columns>
+        </TableView>
+        <Pagination fx:id="pagination" layoutX="346.0" layoutY="619.0" opacity="0.74" prefHeight="59.0" prefWidth="448.0" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="326.0" AnchorPane.rightAnchor="326.0" />
+        <DatePicker fx:id="datePicker" layoutX="681.0" layoutY="21.0" prefHeight="38.0" prefWidth="341.0" promptText="filter by date" style="-fx-background-color: white; -fx-border-radius: 7px; -fx-border-color: #5A9BD5; -fx-cursor: text;" AnchorPane.rightAnchor="44.0" />
+    </children>
+    <padding>
+        <Insets left="20.0" right="20.0" />
+    </padding>
+</AnchorPane>

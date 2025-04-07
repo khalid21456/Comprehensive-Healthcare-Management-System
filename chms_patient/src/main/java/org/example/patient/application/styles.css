@@ -1,0 +1,102 @@
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.combo-box .arrow {
+    -fx-background-color: #666;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 5 10;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+}
+
+.combo-box-popup .list-cell {
+    -fx-padding: 8 10;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #f0f0f0;
+}
+
+.combo-box-popup .list-cell:selected {
+    -fx-background-color: #e8e8e8;
+}
+
+.date-picker {
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: transparent;
+    -fx-background-image: url('../../images/iconphoto.png');
+    -fx-background-size: 20px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.date-picker .arrow-button .arrow {
+    -fx-opacity: 0;
+}
+
+.date-picker .text-field {
+    -fx-background-color: transparent;
+}
+
+/* Calendar popup styling */
+.date-picker-popup {
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);
+}
+
+.date-picker-popup .month-year-pane {
+    -fx-background-color: white;
+    -fx-padding: 10;
+}
+
+.date-picker-popup .spinner .button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.date-picker-popup .calendar-grid {
+    -fx-background-color: white;
+    -fx-padding: 5;
+}
+
+.date-picker-popup .calendar-grid .day-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 5;
+    -fx-text-fill: #333;
+}
+
+.date-picker-popup .calendar-grid .day-cell:hover {
+    -fx-background-color: #f0f0f0;
+    -fx-text-fill: #000;
+}
+
+.date-picker-popup .calendar-grid .selected {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+}

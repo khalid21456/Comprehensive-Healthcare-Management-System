@@ -1,0 +1,75 @@
+
+#title {
+    -fx-width: 175px;
+    -fx-height: 56px;
+
+    -fx-font-family: 'Montserrat';
+    -fx-font-style: normal;
+    -fx-font-weight: bold;
+    -fx-font-size: 27.65px;
+    -fx-line-height: 41px;
+
+    -fx-text-fill: '#5A9BD5';
+}
+
+#subtitle {
+    -fx-text-fill: 'gray';
+    -fx-font-weight: bold;
+}
+
+#listBills {
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: 'black';
+    -fx-font-weight: bold;
+    -fx-font-size: 19.2px;
+}
+
+
+#title {
+    -fx-width: 175px;
+    -fx-height: 56px;
+
+    -fx-font-family: 'Montserrat';
+    -fx-font-style: normal;
+    -fx-font-weight: bold;
+    -fx-font-size: 27.65px;
+    -fx-line-height: 41px;
+
+    -fx-text-fill: '#5A9BD5';
+}
+
+#subtitle {
+    -fx-text-fill: 'gray';
+    -fx-font-weight: bold;
+}
+
+#listBills {
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: 'black';
+    -fx-font-weight: bold;
+    -fx-font-size: 19.2px;
+}
+
+#stage {
+    -fx-background-color:'white';
+}
+
+#line {
+    -fx-fill: 'gray';
+}
+
+#searchBtn {
+    -fx-font-family: 'Poppins';
+}
+
+#deleteBtn {
+    -fx-font-family: 'Poppins';
+}
+
+#deleteAllBtn {
+    -fx-font-family: 'Poppins';
+}
+
+#refreshBtn {
+    -fx-font-family: 'Poppins';
+}

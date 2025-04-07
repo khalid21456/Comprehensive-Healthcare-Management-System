@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="824.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.doctorappointments.controller.WorkHourController">
+    <children>
+        <AnchorPane id="interieur" layoutX="63.0" layoutY="107.0" prefHeight="350.0" prefWidth="697.0" styleClass="interieur" stylesheets="@style.css">
+            <children>
+                <Label id="date" layoutX="27.0" layoutY="27.0" prefHeight="18.0" prefWidth="133.0" styleClass="date" stylesheets="@style.css" text="Schedules : " textFill="#f2f2f2">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Separator id="separator" layoutX="27.0" layoutY="52.0" opacity="0.7" prefHeight="0.0" prefWidth="506.0" styleClass="date" stylesheets="@style.css" />
+                <DatePicker fx:id="datePicker" layoutX="28.0" layoutY="76.0" prefHeight="26.0" prefWidth="204.0" promptText="Choose the date" styleClass="bouton" />
+                <Label id="date" layoutX="28.0" layoutY="137.0" prefHeight="18.0" prefWidth="126.0" styleClass="date" stylesheets="@style.css" text="Availability time :">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="27.0" layoutY="159.0" prefHeight="10.0" prefWidth="506.0" />
+                <TextField id="TextField1" fx:id="morningTextField" layoutX="41.0" layoutY="220.0" prefHeight="26.0" prefWidth="190.0" promptText="Enter the morning time slot" styleClass="bouton" />
+            <TextField fx:id="afternoonTextField" layoutX="452.0" layoutY="221.0" prefHeight="26.0" prefWidth="190.0" promptText="Enter the afternoon time slot" styleClass="bouton" />
+            </children>
+        </AnchorPane>
+        <Button id="addbouton" fx:id="addButton" layoutX="113.0" layoutY="486.0" mnemonicParsing="false" onAction="#onAddAvailabilityButtonClick" prefHeight="26.0" prefWidth="82.0" styleClass="bouton" stylesheets="@style.css" text="Add" />
+        <Button id="annulerButton" fx:id="cancelButton" layoutX="624.0" layoutY="486.0" mnemonicParsing="false" onAction="#onCancelButtonClick" prefWidth="82.0" styleClass="bouton" stylesheets="@style.css" text="Cancel" />
+        <ComboBox id="comboBox" fx:id="doctorComboBox" layoutX="348.0" layoutY="72.0" prefWidth="150.0" promptText="Choose a doctor" styleClass="bouton" />
+    </children>
+</AnchorPane>

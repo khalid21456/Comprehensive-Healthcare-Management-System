@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.RegisterController"
+      prefHeight="700.0" prefWidth="800.0"
+      stylesheets="@../application/styles.css"
+      style="-fx-background-color: white;">
+
+    <!-- Main Content VBox -->
+    <VBox spacing="15" VBox.vgrow="ALWAYS">
+        <!-- Header with Logo -->
+        <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-padding: 20;">
+            <ImageView fitHeight="30" preserveRatio="true">
+                <Image url="@../../images/logo.png"/>
+            </ImageView>
+        </HBox>
+
+        <!-- Title -->
+        <Label text="New Patient Registration Form" 
+               style="-fx-font-size: 24; -fx-font-weight: bold; -fx-padding: 20;"/>
+
+        <!-- Form Content -->
+        <VBox spacing="15" style="-fx-padding: 20;">
+            <!-- First Row -->
+            <HBox spacing="15">
+                <TextField fx:id="firstNameField" promptText="First Name" 
+                          style="-fx-pref-width: 250; -fx-pref-height: 35; -fx-background-radius: 5;"/>
+                <TextField fx:id="lastNameField" promptText="Last Name"
+                          style="-fx-pref-width: 250; -fx-pref-height: 35; -fx-background-radius: 5;"/>
+                <TextField fx:id="cinField" promptText="CIN"
+                          style="-fx-pref-width: 250; -fx-pref-height: 35; -fx-background-radius: 5;"/>
+            </HBox>
+
+            <!-- Second Row -->
+            <HBox spacing="15">
+                <DatePicker fx:id="birthdayPicker" promptText="MM-DD-YYYY"
+                           style="-fx-pref-width: 250; -fx-pref-height: 35;"/>
+                <ComboBox fx:id="sexComboBox" promptText="Sex"
+                         style="-fx-pref-width: 250; -fx-pref-height: 35;"/>
+                <TextField fx:id="phoneField" promptText="Phone Number"
+                          style="-fx-pref-width: 250; -fx-pref-height: 35; -fx-background-radius: 5;"/>
+            </HBox>
+
+            <!-- Third Row -->
+            <HBox spacing="15">
+                <TextField fx:id="addressField" promptText="Address"
+                          style="-fx-pref-width: 250; -fx-pref-height: 35; -fx-background-radius: 5;"/>
+                <ComboBox fx:id="cityComboBox" promptText="City"
+                         style="-fx-pref-width: 250; -fx-pref-height: 35;"/>
+                <ComboBox fx:id="insuranceComboBox" promptText="Insurance"
+                         style="-fx-pref-width: 250; -fx-pref-height: 35;"/>
+            </HBox>
+
+            <!-- Fourth Row -->
+            <HBox spacing="15" alignment="CENTER">
+                <StackPane>
+                    <children>
+                        <PasswordField fx:id="passwordField" promptText="Password"
+                                     style="-fx-pref-width: 250; -fx-pref-height: 35; -fx-background-radius: 5;"/>
+                        <TextField fx:id="visiblePasswordField" promptText="Password"
+                                 style="-fx-pref-width: 250; -fx-pref-height: 35; -fx-background-radius: 5;"
+                                 visible="false" managed="false"/>
+                        <Button fx:id="togglePassword" onAction="#togglePasswordVisibility"
+                               style="-fx-background-color: transparent;" 
+                               StackPane.alignment="CENTER_RIGHT">
+                            <StackPane.margin>
+                                <Insets right="5"/>
+                            </StackPane.margin>
+                            <graphic>
+                                <ImageView fitHeight="20" preserveRatio="true">
+                                    <Image url="@../../images/eye.png"/>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+                </StackPane>
+                
+                <StackPane>
+                    <children>
+                        <PasswordField fx:id="confirmPasswordField" promptText="Confirm Password"
+                                     style="-fx-pref-width: 250; -fx-pref-height: 35; -fx-background-radius: 5;"/>
+                        <TextField fx:id="visibleConfirmPasswordField" promptText="Confirm Password"
+                                 style="-fx-pref-width: 250; -fx-pref-height: 35; -fx-background-radius: 5;"
+                                 visible="false" managed="false"/>
+                        <Button fx:id="toggleConfirmPassword" onAction="#toggleConfirmPasswordVisibility"
+                               style="-fx-background-color: transparent;"
+                               StackPane.alignment="CENTER_RIGHT">
+                            <StackPane.margin>
+                                <Insets right="5"/>
+                            </StackPane.margin>
+                            <graphic>
+                                <ImageView fitHeight="20" preserveRatio="true">
+                                    <Image url="@../../images/eye.png"/>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+                </StackPane>
+            </HBox>
+
+            <!-- Create Account Button -->
+            <HBox alignment="CENTER">
+                <Button text="Create my account" onAction="#handleRegister"
+                        style="-fx-background-color: #3498db; -fx-text-fill: white; 
+                               -fx-pref-width: 250; -fx-pref-height: 40; 
+                               -fx-background-radius: 5; -fx-font-weight: bold;"/>
+            </HBox>
+
+            <!-- Message Label -->
+            <Label fx:id="messageLabel" alignment="CENTER" 
+                   style="-fx-font-size: 12; -fx-text-fill: red;"/>
+
+            <!-- Help Text -->
+            <HBox alignment="CENTER">
+                <Label text="Make sure to fill-in all the fields in order to successfully create your account."
+                       style="-fx-text-fill: #666; -fx-font-size: 12;"/>
+            </HBox>
+        </VBox>
+
+        <!-- Spacer to push footer to bottom -->
+        <Region VBox.vgrow="ALWAYS" />
+    </VBox>
+
+    <!-- Footer 
+    <HBox spacing="20" alignment="CENTER" style="-fx-padding: 20; -fx-background-color: #81C784;">
+        <Label text="Call Our Support : +212 0520-144477" style="-fx-text-fill: white;"/>
+        <Label text="Address : Ave Mohamed Taleb Naciri, Casablanca 82403" style="-fx-text-fill: white;"/>
+        <Label text="Open 24 Hours / 7 Days" style="-fx-text-fill: white;"/>
+    </HBox>-->
+</VBox>

@@ -1,0 +1,251 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.root {
+    -fx-background-color: #ffffff;
+}
+
+.button {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #1976D2;
+}
+
+.text-field {
+    -fx-padding: 5px;
+    -fx-border-color: #BDBDBD;
+    -fx-border-radius: 3px;
+}
+
+.body-card-text {
+    -fx-fill: #000;
+    -fx-font-family: 'Montserrat';
+    -fx-font-size: 14px;
+}
+
+/* Styles for title card */
+.title-card {
+    -fx-fill: #000;
+    -fx-font-family: 'Montserrat';
+    -fx-font-size: 19.2px;
+    -fx-font-weight: bold;
+}
+.main{
+	-fx-background-color:FFFFFF;
+}
+/* Styles for link card */
+.link-card {
+    -fx-fill: #000;
+    -fx-font-family: 'Montserrat';
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
+    -fx-underline: true;
+}
+
+/* Styles for section title */
+.section-title {
+    -fx-fill: #000;
+    -fx-font-family: 'Montserrat';
+    -fx-font-size: 23.28px;
+    -fx-font-weight: bold;
+}
+.menu {
+    -fx-background-color: #FFFF;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0, 5, 0);
+}
+
+
+#logoImageView {
+    -fx-fit-width: 244px; /* Largeur de l'image */
+    -fx-fit-height: 40px; /* Hauteur de l'image */
+}
+
+
+#titleLabel {
+    color: #000;
+    font-family: "Montserrat";
+    -fx-font-size: 30px;
+    font-style: normal;
+    line-height: normal;
+    -fx-font-weight: bold;
+
+}
+
+
+.label {
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-text-alignment: justify;
+}
+#noVisitLabel {
+    -fx-text-fill: #5A9BD5;
+    -fx-font-size: 50px;
+    -fx-font-weight: bold;
+    -fx-alignment: center; /* Centrer le texte */
+}
+
+/* Style pour la description */
+#descriptionLabel {
+    -fx-font-size: 14px;
+}
+
+/* TableView Styles */
+.table-view {
+    -fx-pref-height: 200px;
+    -fx-min-height: 200px;
+    -fx-min-width: 200px;
+
+    -fx-font-family: "Encode Sans";
+    -fx-background-color: #5A9BD5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 4, 0, 4, 4);
+
+}
+
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: rgba(255, 255, 255, 0.8); /* Couleur pour les lignes impaires */
+}
+
+.table-view .table-row-cell:even {
+    -fx-background-color: white; /* Couleur pour les lignes paires */
+}
+
+.table-view .column-header {
+    -fx-pref-height: 35;
+
+    -fx-font-family: "Encode Sans";
+    -fx-background-color: #5A9BD5; /* Couleur de fond pour l'en-tête */
+    -fx-text-fill: white; /* Couleur du texte */
+    -fx-alignment: center; /* Centrer le texte */
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #5A9BD5;
+}
+
+.table-cell {
+    -fx-alignment: center; /* Centrer le contenu des cellules */
+}
+
+/* Boutons de la TableView */
+.table-view .button:hover {
+    -fx-background-color: #d1e7fd;
+    -fx-border-color: #5A9BD5;
+    -fx-border-radius: 5px;
+}
+
+.table-view .button .image-view {
+    -fx-fit-width: 5px;
+    -fx-fit-height: 5px;
+}
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.combo-box .arrow {
+    -fx-background-color: #666;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 5 10;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+}
+
+.combo-box-popup .list-cell {
+    -fx-padding: 8 10;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #f0f0f0;
+}
+
+.combo-box-popup .list-cell:selected {
+    -fx-background-color: #e8e8e8;
+}
+
+.date-picker {
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: transparent;
+    -fx-background-image: url('../images/iconphoto.png');
+    -fx-background-size: 20px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.date-picker .arrow-button .arrow {
+    -fx-opacity: 0;
+}
+
+.date-picker .text-field {
+    -fx-background-color: transparent;
+}
+
+/* Calendar popup styling */
+.date-picker-popup {
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);
+}
+
+.date-picker-popup .month-year-pane {
+    -fx-background-color: white;
+    -fx-padding: 10;
+}
+
+.date-picker-popup .spinner .button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.date-picker-popup .calendar-grid {
+    -fx-background-color: white;
+    -fx-padding: 5;
+}
+
+.date-picker-popup .calendar-grid .day-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 5;
+    -fx-text-fill: #333;
+}
+
+.date-picker-popup .calendar-grid .day-cell:hover {
+    -fx-background-color: #f0f0f0;
+    -fx-text-fill: #000;
+}
+
+.date-picker-popup .calendar-grid .selected {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+}
+
+
+

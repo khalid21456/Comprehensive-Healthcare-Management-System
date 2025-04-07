@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="824.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.doctorappointments.controller.DeletePlanningController">
+   <Button fx:id="loadSlotsButton" layoutX="345.0" layoutY="67.0" onAction="#loadAvailableSlots" styleClass="bouton" stylesheets="@style.css" text="Load the time slots" />
+    <DatePicker fx:id="datePicker" layoutX="504.0" layoutY="28.0" promptText="Choose a date" styleClass="bouton" />
+   <ComboBox fx:id="doctorComboBox" layoutX="142.0" layoutY="28.0" promptText="Choose a doctor" styleClass="bouton" stylesheets="@style.css" />
+   <ListView fx:id="slotsListView" layoutX="62.0" layoutY="93.0" prefHeight="400.0" prefWidth="700.0" stylesheets="@style.css" />
+   <Button fx:id="deleteButton" layoutX="268.0" layoutY="500.0" onAction="#deleteSelectedSlots" styleClass="bouton" stylesheets="@style.css" text="Delete" />
+   <Button fx:id="editButton" layoutX="471.0" layoutY="500.0" onAction="#editSelectedSlot" styleClass="bouton" stylesheets="@style.css" text="Modify" />
+</AnchorPane>

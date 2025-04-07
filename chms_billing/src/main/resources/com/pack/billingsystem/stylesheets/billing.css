@@ -1,0 +1,145 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400&family=Montserrat:wght@600&family=Poppins:wght@400&display=swap');
+
+/* Colors */
+.main-pane {
+    -fx-background-color: linear-gradient(to right, #F2F2F2 60%, #5A9BD5 40%);
+}
+
+/* Header Styles */
+.header {
+    -fx-background-color: linear-gradient(to right, #F2F2F2 60%, #5A9BD5 40%);
+    -fx-padding: 20px 0 20px 0;
+    -fx-alignment: top-center;
+}
+
+.header-content {
+    -fx-alignment: center;
+    -fx-spacing: 10px;
+}
+
+.patient-name {
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #424088;
+}
+
+/* Content Styles */
+.content-pane {
+    -fx-spacing: 40px;
+    -fx-padding: 40px;
+    -fx-background-color: linear-gradient(to right, #F2F2F2 60%, #5A9BD5 40%);}
+
+.section {
+    -fx-background-color: #ffffff;
+    -fx-padding: 30px;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 5);
+}
+
+.section-title {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #424088;
+    -fx-padding: 0 0 10px 0;
+    -fx-hgrow: always;
+}
+
+.section-price {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 16px;
+    -fx-text-fill: #424088;
+    -fx-font-weight: normal;
+    -fx-background-color: linear-gradient(to right, #F2F2F2 60%, #5A9BD5 40%);
+    -fx-padding: 0 0 10 40
+}
+
+.details-grid {
+    -fx-hgap: 30px;
+    -fx-vgap: 15px;
+}
+
+.detail-label {
+    -fx-font-family: "Encode Sans";
+    -fx-font-size: 16px;
+    -fx-text-fill: #7C7C7C;
+    -fx-font-weight: bold;
+    -fx-alignment: TOP_RIGHT;
+}
+
+.detail-value {
+    -fx-font-family: "Encode Sans";
+    -fx-font-size: 16px;
+    -fx-text-fill: #424088;
+    -fx-font-weight: normal;
+}
+
+/* Button Styles */
+.button-section {
+    -fx-font-family: "Poppins";
+    -fx-padding: 10 40 40 40;
+    -fx-alignment: baseline-right;
+    -fx-spacing: 20px;
+    -fx-background-color: linear-gradient(to right, #F2F2F2 60%, #5A9BD5 40%);
+}
+
+.button {
+    -fx-background-color: #5A9BD5;
+    -fx-text-fill: #FFFFFF;
+    -fx-padding: 12px 24px;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+    -fx-border-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 3);
+}
+
+.buttonGenerate{
+    -fx-background-color: #F2F2F2;
+    -fx-text-fill: #5A9BD5;
+    -fx-padding: 12px 24px;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+    -fx-border-radius: 15px;
+}
+
+.button:hover {
+    -fx-background-color: #4587B8;
+}
+
+.buttonGenerate:hover{
+    -fx-background-color: #FFFFFF;
+}
+
+/* Conteneur du logo */
+.logo {
+    -fx-alignment: center;
+    -fx-padding: 0 40 0 0;
+    -fx-spacing: 10px; /* Espacement entre les éléments */
+}
+
+/* Image du logo */
+.logo-image {
+    -fx-fit-width: 160px; /* Ajustez la largeur de l'image */
+    -fx-fit-height: 50px; /* Ajustez la hauteur de l'image */
+}
+
+/* Titre principal */
+.logo-title {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF; /* Couleur bleue */
+}
+
+/* Sous-titre */
+.logo-subtitle {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 8px;
+    -fx-text-fill: #F2F2F2; /* Couleur grise */
+}
+
+.patient-image {
+    -fx-background-color: #4587B8;
+}

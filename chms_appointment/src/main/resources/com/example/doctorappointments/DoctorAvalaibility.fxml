@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="824.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.doctorappointments.controller.DoctorAvailabilityController">
+    <children>
+        <ComboBox id="comboBox" fx:id="doctorComboBox" layoutX="298.0" layoutY="71.0" onAction="#handleDoctorSelection" prefWidth="150.0" promptText="Choose a doctor" />
+        <ListView fx:id="availabilityListView" layoutX="70.0" layoutY="131.0" prefHeight="274.0" prefWidth="606.0" />
+    </children>
+</AnchorPane>

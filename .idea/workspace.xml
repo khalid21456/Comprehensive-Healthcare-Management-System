@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dda1fcc2-7617-49cc-8711-0b37b947927b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/main/src/main/java/com/example/main/dashboard/MainDashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/dashboard/MainDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/example/main/dashboard/MainDashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/dashboard/MainDashboardController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/AppointmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/AppointmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/AvailableDoctorsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/AvailableDoctorsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/CheckAvalaibilityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/CheckAvalaibilityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/DeletePlanningController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/DeletePlanningController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/DoctorAvailabilityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/DoctorAvailabilityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/DoctorFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/DoctorFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/DoctorUpdateFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/DoctorUpdateFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/DoctorsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/DoctorsList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/FirstInterfaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/FirstInterfaceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/MainMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/MedicationFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/MedicationFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/PostponeAppointmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/PostponeAppointmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/TestFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/TestFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/WorkHourController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/WorkHourController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/controller/booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/AppointmentDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/AppointmentDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/Availability.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/Availability.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/DoctorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/DoctorDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/DoctorDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/DoctorDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/Medication.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/Medication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/OrdonnanceMedicament.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/OrdonnanceMedicament.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/OrdonnanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/OrdonnanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/Pharmacy.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/Pharmacy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/Speciality.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/Speciality.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/SpecialityStringConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/SpecialityStringConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/model/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/service/AppointmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/service/AppointmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/service/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/service/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/service/DoctorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/service/DoctorDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/service/DoctorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/service/DoctorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/service/OrdonnanceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/service/OrdonnanceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/service/PharmacyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/service/PharmacyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/service/PlanningDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/service/PlanningDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/service/PostponeAppointmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/service/PostponeAppointmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/com/example/doctorappointments/service/TestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/AppointmentStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/AppointmentStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/Availability.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/Availability.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/DeletePlanning.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/DeletePlanning.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/DoctorAvalaibility.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/DoctorAvalaibility.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/Postpone-Appointment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/Postpone-Appointment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/addWorkhour.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/addWorkhour.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/appointment-list.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/appointment-list.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/booking.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/booking.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/dashboard/MainDashboard.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/doctor-form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/doctor-form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/doctor-update-form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/doctor-update-form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/doctors-list.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/doctors-list.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/first-interface.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/first-interface.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/getAvalaibleByDate.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/getAvalaibleByDate.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/prescription-medical-form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/prescription-medical-form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/prescription-test-form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/prescription-test-form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/chms_appointment/src/main/resources/com/example/doctorappointments/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/controllers/AddMedicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/controllers/AddMedicationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/controllers/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/controllers/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/controllers/DetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/controllers/DetailsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/controllers/FournisseurController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/controllers/FournisseurController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/controllers/MedicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/controllers/MedicationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/controllers/MedicationListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/controllers/MedicationListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/controllers/OrdonnanceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/controllers/OrdonnanceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/controllers/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/controllers/ProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/dao/Database.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/dao/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/dao/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/dao/DoctorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/dao/DoctorDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/dao/MedicationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/dao/MedicationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/dao/MedicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/dao/MedicationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/dao/OrdonnanceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/dao/OrdonnanceDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/dao/PatientDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/dao/PatientDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/models/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/models/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/models/Medicament.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/models/Medicament.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/models/Ordonnance.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/models/Ordonnance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/models/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/models/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/models/Speciality.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/models/Speciality.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/views/Fournisseur.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/views/Fournisseur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/views/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/views/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/views/Medicament.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/views/Medicament.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/chms/views/Ordonnance.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/bdio/chms/pharmacy/views/Ordonnance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/css/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/css/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/fxml/Details.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/fxml/Details.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/fxml/Medicament.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/fxml/Medicament.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/fxml/Ordonnance.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/fxml/Ordonnance.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/fxml/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/fxml/dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/fxml/fournisseur.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/fxml/fournisseur.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/fxml/login-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/fxml/profile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/fxml/profile.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/fxml/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/fxml/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/..png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/..png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/Ellipse.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/Ellipse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/Other 06.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/Other 06.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/anatomical-heart (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/anatomical-heart (1).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/anatomical-heart.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/anatomical-heart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/banner.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/banner.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/calendar-lines-pen.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/calendar-lines-pen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/capsules.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/capsules.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/chart-simple-horizontal.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/chart-simple-horizontal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/chart-simple.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/chart-simple.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/clipboard.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/clipboard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/command.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/command.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/exit.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/exit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/eye.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/eye.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/heart-rate.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/heart-rate.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/heartbeats_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/heartbeats_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/heartbeats_logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/heartbeats_logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/home (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/home (1).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/home.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/home.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/home1.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/home1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/icons8-home-24.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/icons8-home-24.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/list.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/list.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/logotest.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/logotest.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/med.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/med.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/menu-burger.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/menu-burger.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/microscope.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/microscope.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/order-history.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/order-history.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/play.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/play.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/prescription-bottle.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/prescription-bottle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/prescription.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/prescription.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/right-arrow-blanc.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/right-arrow-blanc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/right-arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/right-arrow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/search.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/search.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/settings.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/settings.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/stats.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/stats.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/stethoscope-3274366-2732756@0 1.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/stethoscope-3274366-2732756@0 1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/stethoscope.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/stethoscope.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/undraw_Scientist_ft0o.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/undraw_Scientist_ft0o.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/undraw_doctors_djoj.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/undraw_doctors_djoj.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/undraw_medicine_b-1-ol.svg" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/undraw_medicine_b-1-ol.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/undraw_medicine_b1ol.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/undraw_medicine_b1ol.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/user (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/user (1).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/user 2.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/user 2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/chms/images/user2.png" beforeDir="false" afterPath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/bdio/chms/pharmacy/images/user2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chms_pharmacy/src/main/resources/login-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/hello-view.fxml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2rYFpOIy83cIeCnO23BebR7Uq1p" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MainDashboard.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Chms__Z",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/KHALID/Downloads/CHMS"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dda1fcc2-7617-49cc-8711-0b37b947927b" name="Changes" comment="" />
+      <created>1736728283692</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736728283692</updated>
+    </task>
+    <servers />
+  </component>
+</project>

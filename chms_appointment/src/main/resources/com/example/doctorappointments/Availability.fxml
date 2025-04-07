@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.doctorappointments.controller.MainMenuController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+    <left>
+        <AnchorPane prefWidth="200.0" styleClass="menu">
+            <!-- Exemple de menu avec boutons -->
+            <Button layoutX="1.0" layoutY="157.0" onAction="#loadAddWorkhour" prefWidth="200.0" styleClass="bouton" stylesheets="@style.css" text="Add Work Hour" />
+            <Button layoutX="1.0" layoutY="200.0" onAction="#loadDeletePlanning" prefWidth="200.0" styleClass="bouton" stylesheets="@style.css" text="Doctor Avalaibility" />
+            <Button layoutX="1.0" layoutY="241.0" onAction="#loadAvailableDoctors" prefWidth="200.0" styleClass="bouton" stylesheets="@style.css" text="Available Doctors" />
+         <ImageView fitHeight="119.0" fitWidth="200.0" layoutX="14.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" />
+         <ImageView fitHeight="124.0" fitWidth="135.0" layoutX="33.0" layoutY="6.0">
+            <image>
+               <Image url="@../../../images/doctor.png" />
+            </image>
+         </ImageView>
+            <!--<Button layoutY="250" text="Doctor Avalaibility" onAction="#loadDoctorAvailability" prefWidth="200.0"/>-->
+
+        </AnchorPane>
+    </left>
+
+    <!-- Zone centrale qui affiche dynamiquement les interfaces -->
+    <center>
+        <AnchorPane fx:id="root" focusTraversable="true" prefHeight="534.0" prefWidth="824.0" stylesheets="@style.css">
+         <AnchorPane layoutX="82.0" layoutY="70.0" prefHeight="349.0" prefWidth="614.0" styleClass="interieur">
+            <children>
+                  <!-- Cette zone centrale sera remplie avec les différentes vues -->
+                  <Label fx:id="welcomeLabel" layoutX="139.0" layoutY="148.0" style="-fx-font-size: 24px; -fx-text-fill: #333;" styleClass="titer" stylesheets="@style.css" text="Welcome to the system!" />
+            </children>
+         </AnchorPane>
+        </AnchorPane>
+    </center>
+</BorderPane>

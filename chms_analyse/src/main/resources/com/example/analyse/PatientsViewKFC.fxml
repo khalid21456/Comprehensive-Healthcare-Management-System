@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="20" style="-fx-background-color: #FFFFFF; -fx-padding: 20px;" xmlns="http://javafx.com/javafx/21.0.5" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.analyse.Controller.PatientsControllerKFC">
+    <TableView fx:id="tableView" maxHeight="300" style="-fx-background-color: #F2F2F2; -fx-border-color: #5A9BD5; -fx-border-width: 1px;">
+        <columns>
+            <TableColumn fx:id="doctorNameColumn" minWidth="150.0" prefWidth="200.0" style="-fx-font-family: 'Encode Sans'; -fx-font-size: 14; -fx-text-fill: #101023; -fx-alignment: center;" text="Nom du Médecin" />
+            <TableColumn fx:id="avgPatientsPerDayColumn" minWidth="150.0" prefWidth="200.0" style="-fx-font-family: 'Encode Sans'; -fx-font-size: 14; -fx-text-fill: #101023; -fx-alignment: center;" text="Patients par Jour" />
+        </columns>
+    </TableView>
+</VBox>

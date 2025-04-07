@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.doctorappointments.controller.booking">
+    <VBox alignment="CENTER" spacing="20" style="-fx-background-color: #FFFFFF; -fx-font-family: 'Poppins';" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <padding>
+            <Insets left="20" right="20" />
+        </padding>
+        <VBox alignment="CENTER_LEFT" layoutX="55.0" layoutY="44.0" spacing="10">
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <ImageView fitHeight="45.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/heartbeats_logo.png" />
+                    </image>
+                </ImageView>
+                <Label text="CarePoint" textFill="#5a9bd5">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="26.0" />
+                    </font>
+                </Label>
+            </HBox>
+            <Label alignment="CENTER" text="Health Management System" textAlignment="CENTER" textFill="#0000006f">
+                <font>
+                    <Font name="Arial Rounded MT Bold" size="13.0" />
+                </font>
+            </Label>
+        </VBox>
+
+
+        <!-- Title -->
+        <Label style="-fx-font-size: 33px; -fx-font-weight: bold; -fx-text-fill: #424088; " text="Appointment Form" />
+        <Separator orientation="HORIZONTAL" />
+        <!-- Patient Information Section -->
+        <VBox spacing="15">
+            <Label style="-fx-font-size: 19px; -fx-font-weight: bold; -fx-background-color: #5A9BD5;-fx-background-radius: 15px;  /* Rounded corners */            -fx-padding: 5px 10px;" text="Patient Information" textFill="#FFFFFF">
+                <effect>
+                    <GaussianBlur radius="1" />
+                </effect></Label>
+
+
+
+            <GridPane hgap="15" vgap="10">
+                <columnConstraints>
+                    <ColumnConstraints minWidth="100.0" prefWidth="120.0" />
+                    <ColumnConstraints maxWidth="245.0" minWidth="200.0" prefWidth="231.0" />
+                    <ColumnConstraints maxWidth="70.0" minWidth="28.0" prefWidth="32.0" />
+                    <ColumnConstraints maxWidth="161.0" minWidth="100.0" prefWidth="157.0" />
+                    <ColumnConstraints minWidth="200.0" prefWidth="250.0" />
+                </columnConstraints>
+
+                <!-- Full Name Row -->
+                <Label style="-fx-font-size: 16px; -fx-text-fill: #424088; -fx-padding: 10px;  -fx-font-weight: bold;" text="Full Name" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <TextField fx:id="fullNameField" prefHeight="43.0" prefWidth="169.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #cccccc; -fx-border-radius: 5px; -fx-pref-width: 300px; -fx-padding: 8px; -fx-font-size: 16px;" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <Button onAction="#searchPatientByFullName" style="-fx-background-color: transparent; -fx-text-fill: #5A9BD5; -fx-font-size: 16px; -fx-font-weight: bold; -fx-padding: 0px;" text="🔍" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+
+                <!-- Phone Number Row -->
+                <Label prefHeight="45.0" prefWidth="80.0" style="-fx-font-size: 16px; -fx-text-fill: #424088; -fx-padding: 10px;  -fx-font-weight: bold;" text="Phone" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+                <TextField fx:id="phoneNumberField" editable="false" style="-fx-background-color: #FFFFFF; -fx-border-color: #cccccc; -fx-border-radius: 5px; -fx-pref-width: 300px; -fx-padding: 8px; -fx-font-size: 16px;" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+                <rowConstraints>
+                    <RowConstraints />
+                </rowConstraints>
+            </GridPane>
+        </VBox>
+
+        <!-- Appointment Information Section -->
+        <VBox spacing="15">
+            <Label style="-fx-font-size: 19px; -fx-font-weight: bold; -fx-background-color: #5A9BD5;-fx-background-radius: 15px;  /* Rounded corners */            -fx-padding: 5px 10px;" text="Appointment Information" textFill="#FFFFFF">
+                <effect>
+                    <GaussianBlur radius="1" />
+                </effect></Label>
+            <GridPane hgap="15" vgap="10">
+                <columnConstraints>
+                    <ColumnConstraints maxWidth="145.0" minWidth="117.0" prefWidth="117.0" />
+                    <ColumnConstraints maxWidth="283.0" minWidth="200.0" prefWidth="264.0" />
+                    <ColumnConstraints maxWidth="245.0" minWidth="155.0" prefWidth="182.0" />
+                    <ColumnConstraints maxWidth="238.0" minWidth="200.0" prefWidth="264.0" />
+                </columnConstraints>
+
+                <!-- Speciality Row -->
+                <Label style="-fx-font-size: 16px; -fx-text-fill: #424088; -fx-padding: 10px; -fx-font-weight: bold;" text="Speciality" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <ComboBox fx:id="specialityComboBox" maxWidth="Infinity" promptText="Select Speciality" style="-fx-background-color: #FFFFFF; -fx-border-color: #cccccc; -fx-border-radius: 5px; -fx-pref-width: 250px; -fx-padding: 6px; -fx-font-size: 14px;" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                <!-- Doctor Row -->
+                <Label style="-fx-font-size: 16px; -fx-text-fill: #424088; -fx-padding: 10px; -fx-font-weight: bold;" text="Doctor" GridPane.columnIndex="2" />
+                <ComboBox fx:id="doctorComboBox" maxWidth="Infinity" prefHeight="44.0" prefWidth="200.0" promptText="Select Doctor" style="-fx-background-color: #FFFFFF; -fx-border-color: #cccccc; -fx-border-radius: 5px; -fx-pref-width: 250px; -fx-padding: 6px; -fx-font-size: 14px;" GridPane.columnIndex="3" />
+
+                <!-- Service Row -->
+                <Label style="-fx-font-size: 16px; -fx-text-fill: #424088; -fx-padding: 10px; -fx-font-weight: bold;" text="Service" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <ComboBox fx:id="serviceComboBox" maxWidth="Infinity" promptText="Select Service" style="-fx-background-color: #FFFFFF; -fx-border-color: #cccccc; -fx-border-radius: 5px; -fx-pref-width: 250px; -fx-padding: 6px; -fx-font-size: 14px;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                <!-- Date Row -->
+                <Label style="-fx-font-size: 16px; -fx-text-fill: #424088; -fx-padding: 10px; -fx-font-weight: bold;" text="Date" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <DatePicker fx:id="appointmentDatePicker" maxWidth="Infinity" style="-fx-background-color: #FFFFFF; -fx-border-color: #cccccc; -fx-border-radius: 5px; -fx-padding: 8px;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                <!-- Time Row -->
+                <Label style="-fx-font-size: 16px; -fx-text-fill: #424088; -fx-padding: 10px; -fx-font-weight: bold;" text="Time" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                <ComboBox fx:id="hoursComboBox" maxWidth="Infinity" promptText="Select Hour" style="-fx-background-color: #FFFFFF; -fx-border-color: #cccccc; -fx-border-radius: 5px; -fx-pref-width: 300px; -fx-padding: 8px; -fx-font-size: 16px;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+                <!-- Price Row -->
+                <Label style="-fx-font-size: 16px; -fx-text-fill: #424088; -fx-padding: 10px; -fx-font-weight: bold;" text="Price" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <TextField fx:id="priceField" style="-fx-background-color: #FFFFFF; -fx-border-color: #cccccc; -fx-border-radius: 5px; -fx-pref-width: 150px; -fx-padding: 8px; -fx-font-size: 16px;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                <rowConstraints>
+                    <RowConstraints />
+                    <RowConstraints />
+                    <RowConstraints />
+                    <RowConstraints />
+                    <RowConstraints />
+                    <RowConstraints />
+                </rowConstraints>
+            </GridPane>
+        </VBox>
+
+        <!-- Book Button -->
+        <Button fx:id="createAppointmentButton" minWidth="150" onAction="#createAppointment" style="-fx-background-color: #5A9BD5; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-padding: 10px 20px; -fx-border-radius: 5px;" text="Book Now" />
+    </VBox>
+</AnchorPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<ScrollPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.pack.billingsystem.BillingController" prefHeight="700.0" prefWidth="1100.0" styleClass="main-pane" stylesheets="@stylesheets/billing.css">
+    <VBox>
+        <HBox styleClass="header" spacing="20" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+            <HBox spacing="10" alignment="CENTER_LEFT" style="-fx-padding: 0 0 0 40;">
+                <ImageView styleClass="patiet-image" fitHeight="60" fitWidth="60" preserveRatio="true">
+                    <image>
+                        <Image url="@images/profile.png" />
+                    </image>
+                </ImageView>
+                <Label text="Patient Name" fx:id="patientNameLabel" styleClass="patient-name" />
+            </HBox>
+
+            <!-- Spacer extensible -->
+            <Region HBox.hgrow="ALWAYS" />
+
+            <HBox fx:id="logo" alignment="CENTER" spacing="10" styleClass="logo">
+                <!-- Image du logo -->
+                <ImageView fx:id="logoImage" styleClass="logo-image">
+                    <Image url="@images/logo1.png" />
+                </ImageView>
+            </HBox>
+
+
+        </HBox>
+
+        <VBox alignment="center" styleClass="content-pane" >
+        <VBox styleClass="section" fx:id="patientInfoSection" onMouseClicked="#handlePatientInfoClick">
+            <HBox>
+                <Label text="Appointement" styleClass="section-title" />
+                <Region HBox.hgrow="ALWAYS" />
+                <Label text="" styleClass="section-title" fx:id="facturationPriceTextLabel"/>
+            </HBox>
+            <GridPane fx:id="patientDetailsGrid" styleClass="details-grid" prefWidth="950">
+            </GridPane>
+        </VBox>
+
+        <VBox styleClass="section" fx:id="testLabSection" onMouseClicked="#handleTestLabClick">
+            <HBox>
+                <Label text="Test de Laboratoire" styleClass="section-title" />
+                <Region HBox.hgrow="ALWAYS" />
+                <Label text="250 DH" styleClass="section-title" fx:id="testPriceTextLabel"/>
+            </HBox>
+            <GridPane fx:id="testLabDetailsGrid" styleClass="details-grid" prefWidth="950">
+            </GridPane>
+        </VBox>
+
+        <VBox styleClass="section" fx:id="medicationsSection" onMouseClicked="#handleMedicationsClick">
+            <HBox>
+                <Label text="Médicaments" styleClass="section-title" />
+                <Region HBox.hgrow="ALWAYS" />
+                <Label text="750 DH" styleClass="section-title" fx:id="medicationPriceTextLabel" />
+            </HBox>
+            <GridPane fx:id="medicationsDetailsGrid" styleClass="details-grid" prefWidth="950">
+            </GridPane>
+        </VBox>
+    </VBox>
+
+        <HBox styleClass="section-price" spacing="10" alignment="CENTER_LEFT" >
+            <Label text="Prix Total des Services :" fx:id="totalPriceTextLabel" styleClass="detail-value" />
+            <Label fx:id="totalPriceLabel" text="0,00 DH" styleClass="detail-value" />
+        </HBox>
+
+        <HBox styleClass="section-price" spacing="10" alignment="CENTER_LEFT" >
+            <Label text="Prix a payer avec reduction d'assurance :" fx:id="totalPriceInsuranceTextLabel" styleClass="detail-value" />
+            <Label fx:id="totalPriceInsuranceLabel" text="0,00 DH" styleClass="detail-value" />
+        </HBox>
+
+        <HBox styleClass="button-section">
+            <Button text="Retour" styleClass="button" fx:id="backButton" onMouseClicked="#switchToListBills" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button text="Générer Facture" styleClass="buttonGenerate" fx:id="generateBillButton" onAction="#handleGenerateBillClick" />
+        </HBox>
+    </VBox>
+</ScrollPane>

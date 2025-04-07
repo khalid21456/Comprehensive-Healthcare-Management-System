@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab.controllers.ProcessTestFormController"
+      alignment="CENTER" spacing="10" styleClass="form-container">
+
+    <Label text="Enter Test Results" styleClass="form-title"/>
+
+    <TableView fx:id="testResultsTable" prefWidth="600">
+        <columns>
+            <TableColumn fx:id="testNameColumn" text="Test Name" prefWidth="200"/>
+            <TableColumn fx:id="resultInputColumn" text="Result" prefWidth="200"/>
+            <TableColumn fx:id="resultDateColumn" text="Result Date" prefWidth="200"/>
+        </columns>
+    </TableView>
+
+    <Button fx:id="submitButton" text="Submit Results" onAction="#handleSubmitResults" styleClass="button-submit"/>
+</VBox>

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+#logoImageView {
+    -fx-fit-width: 244px; /* Largeur de l'image */
+    -fx-fit-height: 40px; /* Hauteur de l'image */
+}
+
+
+#titleLabel {
+	color: #000;
+	font-family: "Montserrat";
+	-fx-font-size: 30px;
+	font-style: normal;
+	line-height: normal;
+	-fx-font-weight: bold;
+
+}
+
+
+.label {
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-text-alignment: justify;
+}
+#noVisitLabel {
+    -fx-text-fill: #5A9BD5;
+    -fx-font-size: 50px;
+    -fx-font-weight: bold;
+    -fx-alignment: center; /* Centrer le texte */
+}
+
+/* Style pour la description */
+#descriptionLabel {
+    -fx-font-size: 14px;
+}
+
+/* TableView Styles */
+.table-view {
+	-fx-pref-height: 200px;
+	-fx-min-height: 200px;
+	-fx-min-width: 200px;
+	
+    -fx-font-family: "Encode Sans";
+    -fx-background-color: #5A9BD5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 4, 0, 4, 4);
+
+}
+
+
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: rgba(255, 255, 255, 0.8); /* Couleur pour les lignes impaires */
+}
+
+.table-view .table-row-cell:even {
+    -fx-background-color: white; /* Couleur pour les lignes paires */
+}
+
+.table-view .column-header {
+	-fx-pref-height: 35;
+
+    -fx-font-family: "Encode Sans";
+    -fx-background-color: #5A9BD5; /* Couleur de fond pour l'en-tête */
+    -fx-text-fill: white; /* Couleur du texte */
+    -fx-alignment: center; /* Centrer le texte */
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #5A9BD5;
+}
+
+.table-cell {
+    -fx-alignment: center; /* Centrer le contenu des cellules */
+}
+
+/* Boutons de la TableView */
+.table-view .button:hover {
+    -fx-background-color: #d1e7fd; 
+    -fx-border-color: #5A9BD5; 
+    -fx-border-radius: 5px; 
+}
+
+.table-view .button .image-view {
+    -fx-fit-width: 5px; 
+    -fx-fit-height: 5px;
+}
+
+
+

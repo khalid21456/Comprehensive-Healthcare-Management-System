@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="672.0" prefWidth="893.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bdio.chms.pharmacy.controllers.ProfileController">
+    <!-- Sidebar -->
+    <left>
+        <VBox fx:id="sidebar" maxWidth="100.0" prefHeight="858.0" prefWidth="100.0" spacing="15" style="-fx-background-color: #F2F2F2; -fx-padding: 20;">
+            <Button fx:id="dashboardButton" onAction="#goToDashboard" prefHeight="115.0" prefWidth="160.0" style="-fx-background-color: #F2F2F2;">
+                <graphic>
+                    <ImageView fitHeight="50.0" fitWidth="50.0">
+                        <image>
+                            <Image url="@../images/home.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <Button fx:id="viewMedicationButton" onAction="#showViewMedication" prefHeight="115.0" prefWidth="160.0" style="-fx-background-color: #F2F2F2;">
+                <graphic>
+                    <ImageView fitHeight="50.0" fitWidth="50.0">
+                        <image>
+                            <Image url="@../images/med.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+
+
+            <Button fx:id="calendarButton" onAction="#goToOrdonnance" prefHeight="115.0" prefWidth="160.0" style="-fx-background-color: #F2F2F2;" styleClass="sidebar-button">
+                <graphic>
+                    <ImageView fitHeight="50.0" fitWidth="50.0">
+                        <image>
+                            <Image url="@../images/command.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+
+            <Button fx:id="settingsButton" onAction="#goToFournisseur" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #F2F2F2;">
+                <graphic>
+                    <ImageView fitHeight="50.0" fitWidth="50.0">
+                        <image>
+                            <Image url="@../images/stats.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button fx:id="profileButton" onAction="#goToProfile" prefHeight="102.0" prefWidth="88.0" style="-fx-background-color: #F2F2F2; -fx-background-radius: 10;">
+                <graphic>
+                    <ImageView fitHeight="48.0" fitWidth="47.0">
+                        <image>
+                            <Image url="@../images/profile.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+        </VBox>
+    </left>
+    <center>
+        <AnchorPane prefHeight="672.0" prefWidth="685.0" style="-fx-background-color: ffffff;" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane layoutY="108.0" prefHeight="344.0" prefWidth="472.0">
+                    <children>
+                        <Label layoutX="67.0" layoutY="59.0" prefWidth="63.0" text="First Name:" />
+                        <Label layoutX="67.0" layoutY="103.0" text="Last Name:" />
+                        <Label layoutX="67.0" layoutY="147.0" text="Email:" />
+                        <Label layoutX="67.0" layoutY="188.0" text="Phone:" />
+                        <TextField fx:id="firstNameField" layoutX="151.0" layoutY="59.0" />
+                        <TextField fx:id="lastNameField" layoutX="151.0" layoutY="99.0" />
+                        <TextField fx:id="emailField" layoutX="151.0" layoutY="143.0" />
+                        <TextField fx:id="phoneField" layoutX="151.0" layoutY="184.0" />
+                      <!-- Update Button -->
+                      <Button fx:id="updateButton" layoutX="150.0" layoutY="231.0" onAction="#handleUpdateButtonAction" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #5A9BD5; -fx-border-radius: 5;" text="Update" textFill="WHITE" />
+                    </children>
+                </AnchorPane>
+                <ImageView fitHeight="211.0" fitWidth="271.0" layoutX="287.0" layoutY="393.0">
+                    <image>
+                        <Image url="@../images/undraw_doctors_djoj.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="241.0" fitWidth="245.0" layoutX="474.0" layoutY="113.0">
+                    <image>
+                        <Image url="@../images/undraw_medicine_b1ol.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="509.0" layoutY="27.0" onAction="#goToLogin" prefHeight="35.0" prefWidth="56.0" style="-fx-background-color: transparent;" />
+            <HBox alignment="CENTER_LEFT" layoutX="12.0" layoutY="14.0" prefHeight="73.0" prefWidth="502.0" spacing="15" style="-fx-background-color: #FFFFFF; -fx-padding: 10;">
+               <children>
+                  <ImageView fitHeight="43.0" fitWidth="58.0">
+                     <image>
+                        <Image url="@../images/heartbeats_logo.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER_LEFT" spacing="5">
+                     <children>
+                        <Label graphicTextGap="1.0" prefHeight="15.0" prefWidth="162.0" style="-fx-font-family: 'Montserrat'; -fx-font-weight: bold; -fx-font-size: 16; -fx-text-fill: #5A9BD5;" text="CarePoint" />
+                        <Label graphicTextGap="1.0" prefHeight="8.0" prefWidth="188.0" style="-fx-font-family: 'Poppins'; -fx-font-size: 15; -fx-text-fill: #888888;" text="Health Management System" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+                  <ImageView fitHeight="26.0" fitWidth="17.0" layoutX="529.0" layoutY="32.0">
+                      <image>
+                          <Image url="@../images/exit.png" />
+                      </image>
+                  </ImageView>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

@@ -1,0 +1,54 @@
+/* General button style */
+.button-action {
+    -fx-text-fill: white; /* White text */
+    -fx-font-size: 14px;  /* Font size */
+    -fx-padding: 5px;    /* Padding around the text */
+    -fx-border-radius: 5px;  /* Rounded corners */
+
+}
+
+/* Style for Ordonnance Test and Ordonnance Visite buttons */
+.button-ordonnance {
+    -fx-background-color: #5A9BD5;  /* Blue background */
+}
+
+.button-ordonnance:hover {
+    -fx-background-color: #4A8CC1;  /* Darker blue on hover */
+    -fx-cursor: hand;
+}
+
+.button-ordonnance:pressed {
+    -fx-background-color: #3C6D97;  /* Even darker blue on press */
+    -fx-cursor: hand;
+}
+
+/* Style for Reporter button */
+.button-reporter {
+    -fx-background-color: #FFA726;  /* Orange background */
+
+}
+
+.button-reporter:hover {
+    -fx-background-color: #FB8C00;  /* Darker orange on hover */
+    -fx-cursor: hand;
+}
+
+.button-reporter:pressed {
+    -fx-background-color: #F57C00;  /* Even darker orange on press */
+    -fx-cursor: hand;
+}
+
+/* Style for Annuler button */
+.button-annuler {
+    -fx-background-color: #E57373;  /* Red background */
+}
+
+.button-annuler:hover {
+    -fx-background-color: #EF5350;  /* Darker red on hover */
+    -fx-cursor: hand;
+}
+
+.button-annuler:pressed {
+    -fx-background-color: #F44336;  /* Even darker red on press */
+    -fx-cursor: hand;
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.analyse.Controller.AppointmentProgressController"
+            prefHeight="500.0" prefWidth="800.0"
+            stylesheets="@style1.css">
+    <!-- Horizontal Box to arrange Bar Chart and Progress Bar side by side -->
+    <HBox spacing="10" layoutX="10.0" layoutY="10.0">
+        <!-- Bar Chart Section -->
+        <BarChart fx:id="barChart"
+                  title="Appointments by Service"
+                  prefHeight="400.0" prefWidth="500.0">
+            <xAxis>
+                <CategoryAxis fx:id="xAxis" label="Service" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="yAxis" label="Number of Appointments" />
+            </yAxis>
+        </BarChart>
+
+        <!-- Progress Bar Section -->
+        <VBox spacing="15" alignment="CENTER">
+            <!-- Title -->
+            <Label text="Appointment Per Year"
+                   style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+
+            <!-- Progress Bar -->
+            <ProgressBar fx:id="progressBar" prefWidth="200.0" />
+
+            <!-- Percentage Label -->
+            <Label fx:id="percentageLabel" style="-fx-font-size: 14px;" />
+        </VBox>
+    </HBox>
+</AnchorPane>

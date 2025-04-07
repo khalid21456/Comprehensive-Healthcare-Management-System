@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab.controllers.ViewTestResultsFormController"
+      alignment="CENTER" spacing="10" styleClass="form-container">
+
+    <Label text="Test Results" styleClass="form-title"/>
+
+    <TableView fx:id="testResultsDetailTable" prefWidth="600">
+        <columns>
+            <TableColumn fx:id="testNameColumn" text="Test Name" prefWidth="200"/>
+            <TableColumn fx:id="testValueColumn" text="Test Result" prefWidth="200"/>
+            <TableColumn fx:id="minValueColumn" text="Min Value" prefWidth="100"/>
+            <TableColumn fx:id="maxValueColumn" text="Max Value" prefWidth="100"/>
+            <TableColumn fx:id="dateTestColumn" text="Test Date" prefWidth="200"/>
+            <TableColumn fx:id="dateEffectueColumn" text="Date Effectue" prefWidth="200"/>
+
+        </columns>
+    </TableView>
+
+    <Button text="Close" onAction="#handleClose" styleClass="button-close"/>
+</VBox>

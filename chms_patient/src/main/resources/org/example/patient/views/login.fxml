@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.Insets?>
+
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.patient.controllers.LoginController"
+      prefHeight="600.0" prefWidth="800.0"
+      style="-fx-background-color: white;">
+
+    <!-- Left Section - Login Form -->
+    <VBox  prefWidth="400.0" spacing="20.0" style="-fx-padding: 40;">
+        <Label text="Welcome !" style="-fx-font-size: 26; -fx-font-weight: bold;"/>
+        <Label text="Sign in by entering the information below" style="-fx-font-size: 14; -fx-text-fill: #666;"/>
+        
+        <VBox spacing="10.0" style="-fx-padding: 20 0;">
+            <TextField fx:id="cinField" promptText="CIN/Phone Number" 
+                      style="-fx-pref-width: 300; -fx-pref-height: 40; -fx-background-radius: 5;"/>
+            
+            <PasswordField fx:id="passwordField" promptText="Password"
+                          style="-fx-pref-width: 300; -fx-pref-height: 40; -fx-background-radius: 5;"/>
+            
+            <HBox alignment="CENTER_RIGHT" style="-fx-pref-width: 300;">
+                <Hyperlink text="" style="-fx-text-fill: #3498db;"/>
+            </HBox>
+            
+            <Button text="Sign-in" onAction="#handleLogin"
+                    style="-fx-background-color: #3498db; -fx-text-fill: white; 
+                           -fx-pref-width: 300; -fx-pref-height: 40; 
+                           -fx-background-radius: 5; -fx-font-weight: bold;"/>
+            
+            <Label fx:id="messageLabel" alignment="CENTER" 
+                   style="-fx-pref-width: 300; -fx-font-size: 12;"/>
+            
+            <HBox alignment="CENTER" style="-fx-pref-width: 300;">
+                <Label text="Don't have an account? " style="-fx-text-fill: #666;"/>
+                <Hyperlink text="Create one" onAction="#handleCreateAccount" style="-fx-text-fill: #3498db;"/>
+            </HBox>
+        </VBox>
+    </VBox>
+
+    <!-- Right Section - Image -->
+    <VBox alignment="CENTER" prefWidth="400.0" style="-fx-background-color: #f8f9fa;">
+        <ImageView fitWidth="400.0" fitHeight="600.0" preserveRatio="false">
+            <Image url="@../images/doctor.png"/>
+        </ImageView>
+    </VBox>
+
+</HBox>

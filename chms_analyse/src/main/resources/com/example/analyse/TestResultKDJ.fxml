@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.analyse.Controller.TraitementResultsKDJController">
+    <BarChart fx:id="barChart" prefWidth="400" prefHeight="300">
+        <xAxis>
+            <CategoryAxis fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="yAxis" />
+        </yAxis>
+    </BarChart>
+</AnchorPane>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pack.billingsystem.controllers.BillTableController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5b9bd4" height="857.0" layoutX="594.0" layoutY="-55.0" rotate="16.1" stroke="WHITE" strokeType="INSIDE" width="600.0" />
+      <ImageView fitHeight="82.0" fitWidth="330.0" layoutX="213.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logo2.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="213.0" layoutY="191.0" prefHeight="407.0" prefWidth="789.0" scaleShape="false" stylesheets="@stylesheets/billTable.css">
+        <columns>
+          <TableColumn fx:id="idBill" prefWidth="176.80001831054688" text="Bill id" />
+          <TableColumn fx:id="nom" minWidth="6.4000244140625" prefWidth="160.800048828125" text="Nom" />
+            <TableColumn fx:id="prenom" prefWidth="170.39996337890625" text="Prénom" />
+            <TableColumn fx:id="tele" prefWidth="158.4000244140625" text="Tele" />
+            <TableColumn fx:id="date" prefWidth="168.800048828125" text="Date" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label fx:id="listBills" layoutX="213.0" layoutY="129.0" text="List of Bills" textFill="#5a9bd5">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font></Label>
+      <Line fx:id="line" endX="106.40000915527344" endY="600.0" layoutX="10.0" layoutY="100.0" rotate="180.0" startX="106.40000915527344" startY="-100.0" stroke="#e1d7d7" />
+      <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="31.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/menu.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="31.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/medKit.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="patientLogo" fitHeight="56.0" fitWidth="56.0" layoutX="31.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/patient.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="31.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/statistics.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="35.0" layoutY="525.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/settings.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="inputSearch" layoutX="649.0" layoutY="151.0" prefHeight="26.0" prefWidth="190.0" style="-fx-border-radius: 50%;" />
+      <Button fx:id="btnSearch" layoutX="869.0" layoutY="152.0" mnemonicParsing="false" onAction="#onClickSearch" prefHeight="26.0" prefWidth="132.0" style="-fx-background-color: #81C784;" text="Search" textFill="WHITE" />
+      <Button fx:id="btnRefresh" layoutX="853.0" layoutY="613.0" mnemonicParsing="false" onAction="#refresh" prefHeight="48.0" prefWidth="150.0" style="-fx-background-color: white;" text="Refresh" textFill="#5a9bd5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="33.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/bill.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

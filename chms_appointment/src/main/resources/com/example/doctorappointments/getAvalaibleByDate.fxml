@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="824.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.doctorappointments.controller.AvailableDoctorsController">
+    <DatePicker fx:id="datePicker" layoutX="103.0" layoutY="56.0" promptText="Choose a date" styleClass="bouton" stylesheets="@style.css" />
+    <Button fx:id="searchButton" layoutX="332.0" layoutY="82.0" onAction="#handleSearchButtonClick" styleClass="bouton" stylesheets="@style.css" text="Search" />
+    <!-- ListView pour afficher la disponibilité des médecins -->
+    <ListView fx:id="availabilityListView" layoutX="53.0" layoutY="118.0" prefHeight="350.0" prefWidth="700.0" />
+    <HBox alignment="CENTER_LEFT" layoutX="506.0" layoutY="53.0" spacing="10" />
+     <Label layoutX="451.0" layoutY="59.0" style="-fx-font-size: 14px; -fx-text-fill: #2A4D69; -fx-font-weight: bold;" text="Speciality" />
+   <ComboBox fx:id="specialtyComboBox" layoutX="524.0" layoutY="55.0" prefHeight="26.0" prefWidth="186.0" promptText="Choose the speciality" style="-fx-background-color: #FFFF; -fx-font-size: 12px; -fx-border-color: #CCCCCC;" />
+</AnchorPane>

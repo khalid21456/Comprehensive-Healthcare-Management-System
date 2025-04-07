@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+
+<?import javafx.scene.layout.HBox?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.analyse.Controller.GenderAgeChartKDJController" spacing="10">
+
+    <!-- Filter Controls -->
+
+
+    <!-- Gender-Age Pyramid Chart -->
+    <StackedBarChart fx:id="genderAgePyramidChart">
+        <xAxis>
+            <CategoryAxis fx:id="ageGroupAxis" label="Age Class"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="populationAxis" label="Population"/>
+        </yAxis>
+    </StackedBarChart>
+
+    <!-- Custom Legend Box -->
+    <HBox fx:id="customLegendBox" layoutX="20" layoutY="460" spacing="20" alignment="CENTER"/>
+</VBox>

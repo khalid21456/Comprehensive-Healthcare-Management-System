@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TestRecordControllers" stylesheets="/views/style.css">
+    <!-- Section gauche : Menu -->
+    <left>
+        <VBox prefHeight="557.0" prefWidth="79.0" style="-fx-background-color: #FFFF;" BorderPane.alignment="CENTER">
+            <children>
+                <StackPane fx:id="rootPane" prefHeight="765.0" prefWidth="79.0" style="-fx-background-color: #FFFF; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0, 5, 0);">
+    <children>
+        <Pane prefHeight="683.0" prefWidth="79.0">
+            <children>
+                <Button fx:id="profileButton" layoutX="5.0" layoutY="92.0" onAction="#handleProfileButtonAction" style="-fx-background-color: transparent;">
+                           <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/Icon2menu.png" />
+                            </image>
+                        </ImageView>
+                           </graphic>
+                </Button>
+                <Button fx:id="folderButton" layoutX="6.0" layoutY="163.0" onAction="#handleFolderButtonAction" style="-fx-background-color: transparent;">
+                           <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/IconFolderMenu.png" />
+                            </image>
+                        </ImageView>
+                           </graphic>
+                </Button>
+                <Button fx:id="calendarButton" layoutX="7.0" layoutY="237.0" onAction="#handleCalendarButtonAction" style="-fx-background-color: transparent;">
+                           <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/IconCalendarMenu.png" />
+                            </image>
+                        </ImageView>
+                           </graphic>
+                </Button>
+                <Button fx:id="menuButton" layoutX="4.0" layoutY="26.0" onAction="#handleMenuButtonAction" style="-fx-background-color: transparent;">
+                           <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/Home.png" />
+                            </image>
+                        </ImageView>
+                           </graphic>
+                </Button>
+                <Button fx:id="logoutButton" layoutX="2.0" layoutY="311.0" onAction="#handleLogoutButtonAction" prefHeight="57.0" prefWidth="41.0" style="-fx-background-color: transparent;">
+                    <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/Logout%206.jpg" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</StackPane>
+            </children>
+        </VBox>
+    </left>
+    
+    <!-- Section centrale : Page principale -->
+    <center>
+        <VBox spacing="15" stylesheets="/views/style.css">
+            <padding>
+                <Insets top="60.0" right="83.0" bottom="50.0" left="83.0" />
+            </padding>
+            <ImageView fx:id="logoImageView" fitHeight="41.0" fitWidth="206.0" style="-fx-fit-width: 244; -fx-fit-height: 40;" >
+               <image>
+                  <Image url="@../../images/logo.png" />
+               </image>
+            </ImageView>
+            <VBox spacing="2" maxWidth="900" >
+                <Label fx:id="titleLabel" text="Medical Records" />
+                <Label fx:id="descriptionLabel" maxWidth="900" text="This table displays the medical record of all the visits you have made to our hospital, the diseases you have been diagnosed with and the test results you have made. You can print out any record of yours!" wrapText="true" />
+            </VBox>
+            <TableView fx:id="tableView" prefWidth="500.0" >
+                <columns>
+                    <TableColumn fx:id="testNameColumn" prefWidth="100.0" text="Test Name" />
+                    <TableColumn fx:id="testResultsColumn" prefWidth="100.0" text="Test Results" />
+                    <TableColumn fx:id="testDateColumn" prefWidth="100.0" text="Test Date" />
+                    <TableColumn fx:id="statusColumn" prefWidth="100.0" text="Status" />
+                    <TableColumn fx:id="doctorColumn" prefWidth="100.0" text="Doctor" />
+                    <TableColumn fx:id="prescriptionColumn" prefWidth="100.0" text="Prescription" />
+                </columns>
+            </TableView>
+<Label fx:id="noVisitLabel"
+       text=""
+       maxWidth="Infinity"
+       wrapText="true"
+       style="-fx-font-size: 14px; -fx-text-fill: #555555;"
+       alignment="CENTER" />
+  
+        </VBox>
+    </center>
+    <bottom>
+        <HBox prefHeight="142.0" prefWidth="1050.0" style="-fx-pref-height: 61px;" BorderPane.alignment="CENTER">
+            <children>
+                <Pane prefHeight="62.0" prefWidth="88.0" style="-fx-background-color: #FFFF;" />
+                <Pane prefHeight="62.0" prefWidth="1030.0" style="-fx-background-color: #81C784B2;">
+                    <children>
+                        <Text layoutX="29.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-weight: 400; -fx-font-size: 14px;" text="Call Our Support  : +212 05290-04477" />
+                        <Text layoutX="381.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-weight: 400; -fx-font-size: 14px;" text="Adresse  : Ave Mohamed Taieb Naciri, Casablanca 82403 " />
+                        <Text layoutX="831.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-weight: 400; -fx-font-size: 14px;" text="Open 24 Hours / 7 Days" />
+                    </children>
+                </Pane>
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>
